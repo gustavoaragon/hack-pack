@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #F2F2F2;
+    color: #757575;
+    font-family: sans-serif;
+}
+body {
+    padding: 20px;
+}
+pre {
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    padding: 10px;
+}
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px dotted #AAA;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.logo {
+    display: block;
+    position: relative;
+    left: 50%;
+    margin: 10px 0  20px -105px;
+    text-align: center;
+    width: 210px;
+    height: 40px;
+    text-indent: -999em;
+    background: url(../img/logo.png) no-repeat center center;
+}
+form {
+    display: block;
+    text-align: center;
+}
+input#id {
+    min-width: 250px;
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 18px;
+}
+span.alert {
+    display: block;
+    position: relative;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/*
+
+API FORM
+
+*/
+form .col-sm-4, 
+form .col-sm-5, 
+form .col-sm-6, 
+form .col-sm-2 {
+    margin: 3px 0;
+    padding: 2px;
+}
+form.api-examples .col-sm-5:first-child,
+form.api-examples .col-sm-6:first-child,
+form.api-examples .col-sm-4:first-child {
+    padding-left: 0;
+}
+form.api-examples .col-sm-2:last-child,
+form.api-examples .col-sm-6:last-child {
+    padding-right: 0;
+}

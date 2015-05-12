@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>transactionDecode | Transactions | API | Blockstrap Documentation</title>
+<meta name=”description” content=”Helper function to decode a transaction.”>
+<link rel='shortcut icon' href='../../../../favicon.ico'>
+<link href="../../../../index.html" rel="canonical" />
+    <link href="../../../../_libs/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="../../../../_libs/css/blockstrap.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://blockstrap.com"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-nav" role="search" action="http://blockstrap.com/search/">
+            <!--
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-default">search</button>
+            -->
+            <a href="https://github.com/blockstrap/docs" class="btn btn-default">Get / Edit Docs via GitHub</a>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+                                <li class="">                                        <a href="http://blockstrap.com/">                        Home
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/downloads/">                        Downloads
+                    </a>
+                </li>
+                <li class="active dropdown">                                                        <a href="../../../../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                                            Docs
+<span class="caret"></span>                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                            <li class=" header">
+                                <a href="../../../../en/index.html#">Important</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/index.html#">Table of Contents</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/downloads/index.html">Downloads</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/plugins/index.html">Plugins</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/sdks/index.html">SDKs</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/changes/index.html">Change Log</a>
+                                </li>
+                            <li class=" header">
+                                <a href="../../../../en/applications/index.html">Applications</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/wallet/index.html">Wallet</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/explorer/index.html">Explorer</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/prioritizer.1.html">Priortizer</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/blockauth/index.html">BlockAuth</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/faucets/index.html">Faucets</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/uploads/index.html">Blockchain Uploader</a>
+                                </li>
+                            <li class=" header">
+                                <a href="../../../../en/framework/index.html">Framework</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/started/index.html">Getting Started</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/core/index.html">Core</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/examples/index.html">Examples</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/modules/index.html">Modules</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/assets/index.html">Assets</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/extending/index.html">Extending</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/styling/index.html">Styling</a>
+                                </li>
+                            <li class="active header">
+                                <a href="../../../index.html">API</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/api/v0/blocks.1.html">Blocks</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../addresses/index.html">Addresses</a>
+                                </li>
+                                <li class="active sub">
+                                    <a href="../index.html">Transactions</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/api/v0/notes.1.html">Notes</a>
+                                </li>
+                    </ul>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/showcase/">                        Showcase
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/pricing/">                        Pricing
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/support/">                        Support
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/blog/">                        Blog
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockchains.io/">                        Explorer
+                    </a>
+                </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+    
+<div id="sidebar">
+    <ul id="top">
+            <li class="">
+                <a href="../../../../en/index.html#">Important</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../../en/index.html#">Table of Contents</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/downloads/index.html">Downloads</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/plugins/index.html">Plugins</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/sdks/index.html">SDKs</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/changes/index.html">Change Log</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="../../../../en/applications/index.html">Applications</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../../en/applications/wallet/index.html">Wallet</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/applications/explorer/index.html">Explorer</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/applications/prioritizer.1.html">Priortizer</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/applications/blockauth/index.html">BlockAuth</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/applications/faucets/index.html">Faucets</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/applications/uploads/index.html">Blockchain Uploader</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="../../../../en/framework/index.html">Framework</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../../framework/started/index.html">Getting Started</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/core/index.html">Core</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/examples/index.html">Examples</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/modules/index.html">Modules</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/assets/index.html">Assets</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/extending/index.html">Extending</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/styling/index.html">Styling</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="../../../index.html">API</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../../en/api/v0/blocks.1.html">Blocks</a>
+                        </li>
+                        <li class="">
+                            <a href="../../addresses/index.html">Addresses</a>
+                        </li>
+                        <li class="active">
+                            <a href="../index.html">Transactions</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/api/v0/notes.1.html">Notes</a>
+                        </li>
+                </ul>
+            </li>
+    </ul>
+</div>
+    
+<div id="main-content">
+    <h2>Transaction Decode</h2>
+<pre><code>GET &lt;API_ENDPOINT&gt;/v0/&lt;CHAIN&gt;/transaction/decode/&lt;TRANSACTION_HEX&gt;</code></pre>
+<p>OR</p>
+<pre><code>POST &lt;API_ENDPOINT&gt;/v0/&lt;CHAIN&gt;/transaction/decode
+txn_hex=&lt;TRANSACTION_HEX&gt;</code></pre>
+<p>Used to diagnose relay failures, or to check that you're created a transaction correctly for the given <a href="../../notes/chains/index.html"><code>&lt;CHAIN&gt;</code></a>.</p>
+<p>This is basically a wrapper for the xcoind <code>decoderawtransaction</code> RPC call.</p>
+<p>Example Output</p>
+<pre><code>{
+    "status": "success",
+    "data": {
+        "txid": "34d23f9a9b07353faa2a6359c4d80fc571d666180ffc92f6425bfb35745e003e",
+        "version": 1,
+        "locktime": 0,
+        "vin": [
+            {
+                "txid": "1608de7802b6e73ce0217c334273885f638a2cf9f407345adbadf15d7f5e859d",
+                "vout": 0,
+                "scriptSig": {
+                    "asm": "3045022100ab85d07e8f0fc25bfb78c46a52001de4419e9a7c521661d2c2d8e509f88763b102206b39ce0c97f8e79bc55e033f18307227a733fdd3a19ed1b4322626add53ee27901 03d425b0b0ca633ce0627c3cc0f137f384ac716c83eaf079a9f85377f665a930d1",
+                    "hex": "483045022100ab85d07e8f0fc25bfb78c46a52001de4419e9a7c521661d2c2d8e509f88763b102206b39ce0c97f8e79bc55e033f18307227a733fdd3a19ed1b4322626add53ee279012103d425b0b0ca633ce0627c3cc0f137f384ac716c83eaf079a9f85377f665a930d1"
+                },
+                "sequence": 4294967295
+            },
+            {
+                "txid": "e515091749a8bf38d1915539a3efe40c3b89b6b3c00d0bc81314a080c241a705",
+                "vout": 1,
+                "scriptSig": {
+                    "asm": "304402203692e8c842c0692e4efee1859998f059bd38fa6b49477b2f490f3d2fc6db2e1c02204c8a5752eeb45d0a543797b685042450cea476ef1f704573dc60ace352e54a9501 03d425b0b0ca633ce0627c3cc0f137f384ac716c83eaf079a9f85377f665a930d1",
+                    "hex": "47304402203692e8c842c0692e4efee1859998f059bd38fa6b49477b2f490f3d2fc6db2e1c02204c8a5752eeb45d0a543797b685042450cea476ef1f704573dc60ace352e54a95012103d425b0b0ca633ce0627c3cc0f137f384ac716c83eaf079a9f85377f665a930d1"
+                },
+                "sequence": 4294967295
+            },
+            {
+                "txid": "5dd5cf7e36073636c308e1cacb6b6b0230a32930d6db76e6fbabd897425ee7ea",
+                "vout": 1,
+                "scriptSig": {
+                    "asm": "304402204ba0602cc804000f28399f733b2ab2445111b077fdcb19e80b4557b9ef745b06022002430499c89536a2c37d779638b3eb7634caac748283f2d504ac964d8074888501 03d425b0b0ca633ce0627c3cc0f137f384ac716c83eaf079a9f85377f665a930d1",
+                    "hex": "47304402204ba0602cc804000f28399f733b2ab2445111b077fdcb19e80b4557b9ef745b06022002430499c89536a2c37d779638b3eb7634caac748283f2d504ac964d80748885012103d425b0b0ca633ce0627c3cc0f137f384ac716c83eaf079a9f85377f665a930d1"
+                },
+                "sequence": 4294967295
+            }
+        ],
+        "vout": [
+            {
+                "value": 3.1,
+                "n": 0,
+                "scriptPubKey": {
+                    "asm": "OP_DUP OP_HASH160 c4793a8efccbafb6404f93b1423b268e5cd73212 OP_EQUALVERIFY OP_CHECKSIG",
+                    "hex": "76a914c4793a8efccbafb6404f93b1423b268e5cd7321288ac",
+                    "reqSigs": 1,
+                    "type": "pubkeyhash",
+                    "addresses": [
+                        "nn71vzREoxnXexAS2jztN8RY4xwPTAAcPY"
+                    ]
+                }
+            },
+            {
+                "value": 2.8999,
+                "n": 1,
+                "scriptPubKey": {
+                    "asm": "OP_DUP OP_HASH160 091b2a2595e21f154cfc82f2153a2b482a38bb7a OP_EQUALVERIFY OP_CHECKSIG",
+                    "hex": "76a914091b2a2595e21f154cfc82f2153a2b482a38bb7a88ac",
+                    "reqSigs": 1,
+                    "type": "pubkeyhash",
+                    "addresses": [
+                        "nV2JtRsf8jtVZuG1Q9o5gLxJQJRqHdvs3B"
+                    ]
+                }
+            }
+        ],
+        "_request": {
+            &lt;REQUEST_OBJECT&gt;
+        }
+    }
+}</code></pre>
+<h4>Also see</h4>
+<ul>
+<li><a href="../../notes/requestobject/index.html">Request object</a></li>
+<li><a href="../../notes/chains/index.html">Supported Chains</a></li>
+</ul>
+<h4>Access Criteria</h4>
+<ul>
+<li>GET</li>
+<li>There is no sensitive or custom information in the data returned by this API method.</li>
+<li>HTTP or HTTPS</li>
+<li>No API key required, but subjected to <a href="../../../../en/api/v0/notes/limits-and-tiers.1.html">usage/rate limits</a>.</li>
+<li>If API key provided, then subject to <a href="../../../../en/api/v0/notes/limits-and-tiers.1.html">Usage Tiers</a>.</li>
+</ul>
+<ol>
+<li><a href="../../../index.html">Return to API</a></li>
+<li><a href="http://docs.blockstrap.com/en/api/v0/transactions/transaction/">Transaction</a></li>
+<li><a href="../transaction-relay/index.html">Transaction Relay</a></li>
+<li><a href="index.html">Transaction Decode</a></li>
+<li><a href="../../../../index.html">Table of Contents</a></li>
+</ol>
+</div>
+    
+    <script src="../../../../_libs/js/jquery.min.js"></script>
+    <script src="../../../../_libs/js/snippet.js"></script>
+    <script src="../../../../_libs/js/bootstrap.min.js"></script>
+    <script src="../../../../_libs/js/blockstrap.js"></script>
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55832346-2', 'auto');
+  ga('send', 'pageview');
+    
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-55832346-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>

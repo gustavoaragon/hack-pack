@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Blockstrap Documentation | Framework | Modules | API</title>
+<meta name=”description” content=”api module meta description”>
+<link rel='shortcut icon' href='../../../favicon.ico'>
+<link href="../../../index.html" rel="canonical" />
+    <link href="../../../_libs/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="../../../_libs/css/blockstrap.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://blockstrap.com"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-nav" role="search" action="http://blockstrap.com/search/">
+            <!--
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-default">search</button>
+            -->
+            <a href="https://github.com/blockstrap/docs" class="btn btn-default">Get / Edit Docs via GitHub</a>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+                                <li class="">                                        <a href="http://blockstrap.com/">                        Home
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/downloads/">                        Downloads
+                    </a>
+                </li>
+                <li class="active dropdown">                                                        <a href="../../../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                                            Docs
+<span class="caret"></span>                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                            <li class=" header">
+                                <a href="../../../en/index.html#">Important</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../en/index.html#">Table of Contents</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/downloads/index.html">Downloads</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/plugins/index.html">Plugins</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/sdks/index.html">SDKs</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/changes/index.html">Change Log</a>
+                                </li>
+                            <li class=" header">
+                                <a href="../../../en/applications/index.html">Applications</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/wallet/index.html">Wallet</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/explorer/index.html">Explorer</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/prioritizer.1.html">Priortizer</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/blockauth/index.html">BlockAuth</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/faucets/index.html">Faucets</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/uploads/index.html">Blockchain Uploader</a>
+                                </li>
+                            <li class="active header">
+                                <a href="../../../en/framework/index.html">Framework</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../started/index.html">Getting Started</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../core/index.html">Core</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../examples/index.html">Examples</a>
+                                </li>
+                                <li class="active sub">
+                                    <a href="../index.html">Modules</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../assets/index.html">Assets</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../extending/index.html">Extending</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../styling/index.html">Styling</a>
+                                </li>
+                            <li class=" header">
+                                <a href="../../../api/index.html">API</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../en/api/v0/blocks.1.html">Blocks</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../api/v0/addresses/index.html">Addresses</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../api/v0/transactions/index.html">Transactions</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/api/v0/notes.1.html">Notes</a>
+                                </li>
+                    </ul>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/showcase/">                        Showcase
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/pricing/">                        Pricing
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/support/">                        Support
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/blog/">                        Blog
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockchains.io/">                        Explorer
+                    </a>
+                </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+    
+<div id="sidebar">
+    <ul id="top">
+            <li class="">
+                <a href="../../../en/index.html#">Important</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../en/index.html#">Table of Contents</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/downloads/index.html">Downloads</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/plugins/index.html">Plugins</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/sdks/index.html">SDKs</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/changes/index.html">Change Log</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="../../../en/applications/index.html">Applications</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../en/applications/wallet/index.html">Wallet</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/applications/explorer/index.html">Explorer</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/applications/prioritizer.1.html">Priortizer</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/applications/blockauth/index.html">BlockAuth</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/applications/faucets/index.html">Faucets</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/applications/uploads/index.html">Blockchain Uploader</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="../../../en/framework/index.html">Framework</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../started/index.html">Getting Started</a>
+                        </li>
+                        <li class="">
+                            <a href="../../core/index.html">Core</a>
+                        </li>
+                        <li class="">
+                            <a href="../../examples/index.html">Examples</a>
+                        </li>
+                        <li class="active">
+                            <a href="../index.html">Modules</a>
+                        </li>
+                        <li class="">
+                            <a href="../../assets/index.html">Assets</a>
+                        </li>
+                        <li class="">
+                            <a href="../../extending/index.html">Extending</a>
+                        </li>
+                        <li class="">
+                            <a href="../../styling/index.html">Styling</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="../../../api/index.html">API</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../en/api/v0/blocks.1.html">Blocks</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../api/v0/addresses/index.html">Addresses</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../api/v0/transactions/index.html">Transactions</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/api/v0/notes.1.html">Notes</a>
+                        </li>
+                </ul>
+            </li>
+    </ul>
+</div>
+    
+<div id="main-content">
+    <h1>API Module <a name="docs_home"></a></h1>
+<p>In order to demonstrate the flexibility of the framework, it is configured to supports several different API providers, but not all of the framework functionality can be provided by all providers - with the following matrix used as a summary:</p>
+<table>
+<thead>
+<tr>
+<th>API Provider</th>
+<th>Homepage</th>
+<th>Provider ID</th>
+<th>Blockchains</th>
+<th>Markets</th>
+<th>Pagination</th>
+<th>Addresses</th>
+<th>DNKeys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blockstrap</td>
+<td><a href="http://blockstrap.com"><a href="http://blockstrap.com">http://blockstrap.com</a></a></td>
+<td>blockstrap</td>
+<td>8</td>
+<td><span class="label label-success">Y</span></td>
+<td><span class="label label-success">Y</span></td>
+<td><span class="label label-success">Y</span></td>
+<td><span class="label label-success">Y</span></td>
+</tr>
+<tr>
+<td>SoChain</td>
+<td><a href="http://chain.so"><a href="http://chain.so">http://chain.so</a></a></td>
+<td>sochain</td>
+<td>6</td>
+<td><span class="label label-danger">N</span></td>
+<td><span class="label label-danger">N</span></td>
+<td><span class="label label-danger">N</span></td>
+<td><span class="label label-danger">N</span></td>
+</tr>
+<tr>
+<td>Blockr</td>
+<td><a href="http://blockr.io"><a href="http://blockr.io">http://blockr.io</a></a></td>
+<td>blockr</td>
+<td>4</td>
+<td><span class="label label-danger">N</span></td>
+<td><span class="label label-danger">N</span></td>
+<td><span class="label label-danger">N</span></td>
+<td><span class="label label-danger">N</span></td>
+</tr>
+<tr>
+<td>HelloBlock</td>
+<td><a href="http://helloblock.io"><a href="http://helloblock.io">http://helloblock.io</a></a></td>
+<td>helloblock</td>
+<td>1</td>
+<td><span class="label label-danger">N</span></td>
+<td><span class="label label-success">Y</span></td>
+<td><span class="label label-success">Y</span></td>
+<td><span class="label label-danger">N</span></td>
+</tr>
+</tbody>
+</table>
+<p>A brief explanation of the columns listed above:</p>
+<ul>
+<li><strong>Provider ID</strong> is used in <a href="../../core/configuration/index.html">configuration</a> to set the desired API using <code>api_service</code></li>
+<li><strong>Blockchains</strong> attribute listed above refers to the number of supported <a href="../blockchains/index.html">blockchains</a></li>
+<li><strong>Markets</strong> refers to support for the <a href="../../../en/plugins/markets/index.html">market conditions</a> plugin included with the framework</li>
+<li><strong>Pagination</strong> refers to the ability to <a href="index.html#api_transactions">paginate transactions</a> within addresses</li>
+<li><strong>Addresses</strong> refers to the ability to check multiple addresses with one call (used for <a href="../../../en/applications/prioritizer.1.html">prioritizer</a> theme)</li>
+<li><strong>DNKeys</strong> refers to the ability to check publicly listed addresses using the <a href="http://dnkey.me">DNKey</a> specification</li>
+</ul>
+<hr />
+<h3>API Functions &amp; Variables</h3>
+<p>The API Module features the following functions:</p>
+<ul>
+<li><a href="index.html#api_address"><code>$.fn.blockstrap.api.address</code>(hash, blockchain, callback, service, return_raw)</a></li>
+<li><a href="index.html#api_addresses"><code>$.fn.blockstrap.api.addresses</code>(hashes, blockchain, callback, service)</a></li>
+<li><a href="index.html#api_balance"><code>$.fn.blockstrap.api.balance</code>(hash, blockchain, callback, service)</a></li>
+<li><a href="index.html#api_block"><code>$.fn.blockstrap.api.block</code>(height, blockchain, callback, service, return_raw)</a></li>
+<li><a href="index.html#api_dnkey"><code>$.fn.blockstrap.api.dnkey</code>(id, blockchain, callback, service, return_raw)</a></li>
+<li><a href="index.html#api_dnkeys"><code>$.fn.blockstrap.api.dnkeys</code>(id, blockchain, callback, service, return_raw)</a></li>
+<li><a href="index.html#api_map"><code>$.fn.blockstrap.api.map</code>(blockchain)</a></li>
+<li><a href="index.html#api_market"><code>$.fn.blockstrap.api.market</code>(blockchain, stat, callback, service, return_raw)</a></li>
+<li><a href="index.html#api_request"><code>$.fn.blockstrap.api.request</code>(url, callback, type, data, blockchain, call, username, password)</a></li>
+<li><a href="index.html#api_relay"><code>$.fn.blockstrap.api.relay</code>(hash, blockchain, callback, service, return_raw)</a></li>
+<li><a href="index.html#api_results"><code>$.fn.blockstrap.api.results</code>(defaults, results, blockchain, request, callback)</a></li>
+<li><a href="index.html#api_transaction"><code>$.fn.blockstrap.api.transaction</code>(txid, blockchain, callback, service, return_raw)</a></li>
+<li><a href="index.html#api_transactions"><code>$.fn.blockstrap.api.transactions</code>(address, blockchain, callback, service, return_raw, count, skip)</a></li>
+<li><a href="index.html#api_unspents"><code>$.fn.blockstrap.api.unspents</code>(address, blockchain, callback, confirms, service, return_raw)</a></li>
+<li><a href="index.html#api_url"><code>$.fn.blockstrap.api.url</code>(action, key, blockchain)</a></li>
+</ul>
+<p>You may also want to learn about <a href="index.html#api_mapping">API Mapping</a>.</p>
+<hr />
+<h4><code>api.address</code>(hash, blockchain, callback, service, return_raw) <a name="api_address" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function uses the selected API to get information pertaining to an address.</p>
+<p>The information it is able to map (with the corresponding defaults) includes:</p>
+<!--pre-javascript-->
+<pre><code>{
+    address: 'N/A',
+    hash: 'N/A',
+    tx_count: 0,
+    blockchain: blockchain,
+    received: 0,
+    balance: 0
+}</code></pre>
+<p>Example usage of this function could look like:</p>
+<!--pre-javascript-->
+<pre><code>var api = $.fn.blockstrap.modules.api;
+api.address('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
+{
+    // Your callback
+    console.log(results)
+});</code></pre>
+<p>Which should provide the following results:</p>
+<!--pre-javascript-->
+<pre><code>{
+    address: "1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk",
+    balance: 0,
+    blockchain: "btc",
+    hash: "0030ececbad05ffcdff89f3f26e38ca3d735a8de",
+    received: 5000000000,
+    tx_count: 2
+}</code></pre>
+<p>The <code>service</code> variable allows you to override the default API service for individual calls by providing one listed in configuration.</p>
+<p>If <code>return_raw</code> is set to true, the raw results will be returned through <code>callback</code> <strong>instead</strong> of passing through <code>api.results</code>.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.addresses</code>(hashes, blockchain, callback, service) <a name="api_addresses" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function uses the selected API to get information pertaining to multiple addresses.</p>
+<p>The information it is able to map (with the corresponding defaults) includes:</p>
+<!--pre-javascript-->
+<pre><code>{
+    address: 'N/A',
+    hash: 'N/A',
+    tx_count: 0,
+    blockchain: blockchain,
+    received: 0,
+    balance: 0
+}</code></pre>
+<p>Example usage of this function could look like:</p>
+<!--pre-javascript-->
+<pre><code>var api = $.fn.blockstrap.modules.api;
+api.addresses(
+    ['1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk, 12higDjoCCNXSA95xZMWUdPvXNmkAduhWv'], 
+    'btc', function(results)
+    {
+        // Your callback
+        console.log(results)
+    }
+);</code></pre>
+<p>Which should provide the following results:</p>
+<!--pre-javascript-->
+<pre><code>{
+    address: "1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk",
+    balance: 0,
+    blockchain: "btc",
+    hash: "0030ececbad05ffcdff89f3f26e38ca3d735a8de",
+    received: 5000000000,
+    tx_count: 2
+},
+{
+    address: "12higDjoCCNXSA95xZMWUdPvXNmkAduhWv",
+    balance: 0,
+    blockchain: "btc",
+    hash: "12ab8dc588ca9d5787dde7eb29569da63c3a238c",
+    received: 7762439255612,
+    tx_count: 75
+}</code></pre>
+<p>The <code>service</code> variable allows you to override the default API service for individual calls by providing one listed in configuration.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.balance</code>(hash, blockchain, callback, service) <a name="api_balance" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function uses the selected API to get the balance of an address.</p>
+<p>Example usage of this function could look like:</p>
+<!--pre-javascript-->
+<pre><code>var api = $.fn.blockstrap.modules.api;
+api.balance('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
+{
+    // Your callback
+    console.log(results)
+});</code></pre>
+<p>Which should provide the results as an integer.</p>
+<p>The <code>service</code> variable allows you to override the default API service for individual calls by providing one listed in configuration.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.dnkey</code>(id, blockchain, callback, service, return_raw) <a name="api_dnkey" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function uses the selected <code>id</code> and <code>blockchain</code> to search for the publicly listed <a href="http://dnkey.me">DNKey</a> and returns the relevant address (public key) if it is listed with the associated DNS TXT record.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.dnkeys</code>(id, blockchain, callback, service, return_raw) <a name="api_dnkey" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function uses the selected <code>id</code> to search for the publicly listed <a href="http://dnkey.me">DNKeys</a> whilst ignoring the <code>blockchain</code> and <code>blockstrap</code> variables with hard-coded corresponding values of <code>multi</code> and <code>blockstrap</code>. To be honest, it's a complete hack and should not really be here, but we really wanted to ship 0.5 as early as possible.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.block</code>(height, blockchain, callback, service, return_raw) <a name="api_block" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function uses the selected API to get information pertaining to a block.</p>
+<p>The information it is able to map (with the corresponding defaults) includes:</p>
+<!--pre-javascript-->
+<pre><code>{
+    blockchain: blockchain,
+    height: 'N/A',
+    hash: 'N/A',
+    prev: 'N/A',
+    tx_count: 0,
+    time: 0
+}</code></pre>
+<p>Example usage of this function could look like:</p>
+<!--pre-javascript-->
+<pre><code>var api = $.fn.blockstrap.modules.api;
+api.block('15968', 'btc', function(results)
+{
+    // Your callback
+    console.log(results)
+});</code></pre>
+<p>Which should provide the following results:</p>
+<!--pre-javascript-->
+<pre><code>{
+    blockchain: "btc",
+    hash: "00000000201016a83272835468d457d15965d57f57c0da5944dc94ea9389f360",
+    height: 15968,
+    prev: "00000000abae6b44fa98526e865a08820f4528eda46cad40445de3690c502ae8",
+    time: 1243609567,
+    tx_count: 2
+}</code></pre>
+<p>The <code>service</code> variable allows you to override the default API service for individual calls by providing one listed in configuration.</p>
+<p>If <code>return_raw</code> is set to true, the raw results will be returned through <code>callback</code> <strong>instead</strong> of passing through <code>api.results</code>.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.map</code>(blockchain) <a name="api_map" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used internally to share API end-points.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.market</code>(blockchain, stat, callback, service, return_raw) <a name="api_market" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used to return the current market conditions of the defined <code>blockchain</code>. By default it will return the entire object as follows:</p>
+<!--pre-javascript-->
+<pre><code>{
+    btc_to_usd: 0,
+    daily_txs: 0,
+    daily_sent: 0,
+    hash_rate: 0,
+    btc_discovered: 0,
+    market_cap: 0
+}</code></pre>
+<p>If a valid <code>stat</code> is defined, it will instead return the results of that stat.</p>
+<p>The <code>service</code> variable allows you to override the default API service for individual calls by providing one listed in configuration.</p>
+<p>If <code>return_raw</code> is set to true, the raw results will be returned through <code>callback</code> <strong>instead</strong> of passing through <code>api.results</code>.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.request</code>(url, callback, type, data, blockchain, call, username, password) <a name="api_request" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used internally by other functions within this class to route requests and should not be directly used.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.relay</code>(hash, blockchain, callback, service, return_raw) <a name="api_relay" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function uses the selected API to relay a raw transaction.</p>
+<p>The information it is able to map (with the corresponding defaults) includes:</p>
+<!--pre-javascript-->
+<pre><code>{
+    blockchain: blockchain,
+    txid: 'N/A'
+}</code></pre>
+<p>Example usage of this function could look like:</p>
+<!--pre-javascript-->
+<pre><code>var api = $.fn.blockstrap.modules.api;
+api.relay('__RAW_TX__', 'btc', function(results)
+{
+    // Your callback
+    console.log(results)
+});</code></pre>
+<p>Which should provide the following results:</p>
+<!--pre-javascript-->
+<pre><code>{
+    blockchain: "btc",
+    txid: "00000000201016a83272835468d457d15965d57f57c0da5944dc94ea9389f360"
+}</code></pre>
+<p>The <code>service</code> variable allows you to override the default API service for individual calls by providing one listed in configuration.</p>
+<p>If <code>return_raw</code> is set to true, the raw results will be returned through <code>callback</code> <strong>instead</strong> of passing through <code>api.results</code>.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.results</code>(defaults, results, blockchain, request, callback) <a name="api_results" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used internally by other functions within this class to format requested results and should not be directly used.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.transaction</code>(txid, blockchain, callback, service, return_raw) <a name="api_transaction" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function uses the selected API to get information pertaining to a transaction.</p>
+<p>The information it is able to map (with the corresponding defaults) includes:</p>
+<!--pre-javascript-->
+<pre><code>{
+    url: '#',
+    blockchain: blockchain,
+    txid: 'N/A',
+    size: 'N/A',
+    block: 'N/A',
+    time: 0,
+    input: 0,
+    output: 0,
+    fees: 0
+}</code></pre>
+<p>Example usage of this function could look like:</p>
+<!--pre-javascript-->
+<pre><code>var api = $.fn.blockstrap.modules.api;
+api.transaction(
+    '06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16', 
+    'btc', function(results)
+    {
+        // Your callback
+        console.log(results)
+    }
+);</code></pre>
+<p>Which should provide the following results:</p>
+<!--pre-javascript-->
+<pre><code>{
+    block: 15968,
+    blockchain: "btc",
+    fees: 0,
+    input: 300000000000,
+    output: 300000000000,
+    size: 6883,
+    time: 1243609567,
+    txid: "06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16",
+    url: "#transaction?txid=06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16"
+}</code></pre>
+<p>The <code>service</code> variable allows you to override the default API service for individual calls by providing one listed in configuration.</p>
+<p>If <code>return_raw</code> is set to true, the raw results will be returned through <code>callback</code> <strong>instead</strong> of passing through <code>api.results</code>.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.transactions</code>(address, blockchain, callback, service, return_raw, count, skip) <a name="api_transactions" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function uses the selected API to get information pertaining to all the transactions of a single address.</p>
+<p>The information it is able to map (with the corresponding defaults) includes:</p>
+<!--pre-javascript-->
+<pre><code>{
+    url: '#',
+    blockchain: blockchain,
+    txid: 'N/A',
+    size: 'N/A',
+    block: 'N/A',
+    time: 0,
+    input: 0,
+    output: 0,
+    fees: 0
+}</code></pre>
+<p>Example usage of this function could look like:</p>
+<!--pre-javascript-->
+<pre><code>var api = $.fn.blockstrap.modules.api;
+api.transactions('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
+{
+    // Your callback
+    console.log(results)
+});</code></pre>
+<p>Which should provide the following results:</p>
+<!--pre-javascript-->
+<pre><code>{
+    block: 15968,
+    blockchain: "btc",
+    fees: 0,
+    input: 300000000000,
+    output: 300000000000,
+    size: 6883,
+    time: 1243609567,
+    txid: "06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16",
+    url: "#transaction?txid=06032a172f88ba823785f87341eab26ee7a2eb2de9d2f105220d6580e3affc16"
+},
+    block: 15169,
+    blockchain: "btc",
+    fees: 0,
+    input: 0,
+    output: 5000000000,
+    size: 135,
+    time: 1242853427,
+    txid: "7f065b4a2a7f5393a5d1b74e8f340ac961d21bb7e8b77a59c9db580eeaf78d03",
+    url: "#transaction?txid=7f065b4a2a7f5393a5d1b74e8f340ac961d21bb7e8b77a59c9db580eeaf78d03"
+}</code></pre>
+<p>The <code>service</code> variable allows you to override the default API service for individual calls by providing one listed in configuration.</p>
+<p>If <code>return_raw</code> is set to true, the raw results will be returned through <code>callback</code> <strong>instead</strong> of passing through <code>api.results</code>.</p>
+<p>Use <code>count</code> and <code>skip</code> for pagination, to control how many records are returned or skipped (if support by selected API).</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.unspents</code>(address, blockchain, callback, confirms, service, return_raw) <a name="api_unspents" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function uses the selected API to check an address for unspent inputs.</p>
+<p>The information it is able to map (with the corresponding defaults) includes:</p>
+<!--pre-javascript-->
+<pre><code>{
+    txid: 'N/A',
+    index: 0,
+    value: 0,
+    script: 'N/A'
+}</code></pre>
+<p>Example usage of this function could look like:</p>
+<!--pre-javascript-->
+<pre><code>var api = $.fn.blockstrap.modules.api;
+api.unspents('1121cQLqCsDsLPAkJW5ddTCREZ7Bp4ufrk', 'btc', function(results)
+{
+    // Your callback
+    console.log(results)
+});</code></pre>
+<p>The <code>service</code> variable allows you to override the default API service for individual calls by providing one listed in configuration.</p>
+<p>If <code>return_raw</code> is set to true, the raw results will be returned through <code>callback</code> <strong>instead</strong> of passing through <code>api.results</code>.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4><code>api.url</code>(action, key, blockchain) <a name="api_url" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used internally by other functions within this class to help construct URLs prior to API requests and should not be directly used.</p>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<hr />
+<h4>API Mapping <a name="api_mapping" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>Blockstrap does not lock you in to a specific API provider. We provide functionality that allows you to map each and every API call we make to a specific API end-point of your choosing. For example, if you wanted to map our wallet to the <a href="http://helloblock.io">Hello Block</a> API you would supply the following map:</p>
+<!--pre-javascript-->
+<pre><code>{
+    "blockchains": {
+        "btc": {
+            "blockchain": "Bitcoin",
+            "lib": "bitcoin",
+            "apis": {
+                "blockstrap": "http://api.blockstrap.com/v0/btc/", 
+                "helloblock": "https://mainnet.helloblock.io/v1/"
+            },
+            "fee": 0.0001
+        },
+        "multi": {
+            "private": true,
+            "apis": {
+                "blockstrap": "http://api.blockstrap.com/v0/multi/"
+            }
+        }
+    },
+    "apis": {
+        "btc": {
+            "helloblock": {
+                "functions": {
+                    "to": {
+                        "address": "addresses/",
+                        "addresses": "addresses?addresses=",
+                        "transaction": "transactions/",
+                        "transactions": "addresses/$call/transactions?limit=100",
+                        "block": "blocks/",
+                        "relay": "transactions/",
+                        "relay_param": "rawTxHex",
+                        "unspents": "addresses/$call/unspents?limit=100"
+                    },
+                    "from": {
+                        "address": {
+                            "key": "address",
+                            "address": "address",
+                            "hash": "hash160",
+                            "tx_count": "txsCount",
+                            "received": "confirmedReceivedValue",
+                            "balance": "balance"
+                        },
+                        "addresses": {
+                            "key": "addresses",
+                            "delimiter": "&amp;addresses=",
+                            "address": "address",
+                            "hash": "hash160",
+                            "tx_count": "txsCount",
+                            "received": "confirmedReceivedValue",
+                            "balance": "balance"
+                        },
+                        "transaction": {
+                            "key": "transaction",
+                            "txid": "txHash",
+                            "size": "size",
+                            "block": "blockHeight",
+                            "time": "blockTime",
+                            "input": "totalInputsValue",
+                            "output": "totalOutputsValue",
+                            "value": "estimatedTxValue",
+                            "fees": "fees"
+                        },
+                        "transactions": {
+                            "key": "transactions",
+                            "txid": "txHash",
+                            "size": "size",
+                            "block": "blockHeight",
+                            "time": "blockTime",
+                            "input": "totalInputsValue",
+                            "inputs": "inputs",
+                            "output": "totalOutputsValue",
+                            "outputs": "outputs",
+                            "value": "estimatedTxValue",
+                            "fees": "fees"
+                        },
+                        "block": {
+                            "key": "block",
+                            "height": "blockHeight",
+                            "hash": "blockHash",
+                            "prev": "prevBlockHash",
+                            "tx_count": "txsCount",
+                            "time": "blockTime"
+                        },
+                        "relay": {
+                            "txid": "txHash",
+                            "inner": "transaction"
+                        },
+                        "unspents": {
+                            "key": "unspents",
+                            "confirmations": "confirmations",
+                            "txid": "txHash",
+                            "index": "index",
+                            "value": "value",
+                            "script": "scriptPubKey"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}</code></pre>
+<p><a href="index.html#docs_home"><small>- back to top</small></a></p>
+<p>As you can see from line 13 above it is also possible to include blockchains that can be used privately, and <strong>DO NOT</strong> show up in drop-down selections.</p>
+<p>Please note the we currently support the following APIs (from default configuration):</p>
+<ul>
+<li><a href="http://blockchains.io">Blockchains.io</a> (6 Chains): select <strong><code>blockstrap</code></strong> as service choice</li>
+<li><a href="http://chain.so">SoChain.io</a> (6 Chains): select <strong><code>sochain</code></strong> as service choice</li>
+<li><a href="http://blockr.io">Blockr.io</a> (4 Chains): select <strong><code>blockr</code></strong> as service choice</li>
+<li><a href="https://helloblock.io/">HelloBlock.io</a> (BTC only): select <strong><code>helloblock</code></strong> as service choice</li>
+</ul>
+<hr />
+<ol>
+<li>Related Articles</li>
+<li><a href="../index.html">Back to Modules</a></li>
+<li><a href="../accounts/index.html">Accounts</a></li>
+<li><a href="index.html">API</a></li>
+<li><a href="../buttons/index.html">Buttons</a></li>
+<li><a href="../contacts/index.html">Contacts</a></li>
+<li><a href="../blockchains/index.html">Blockchains</a></li>
+<li><a href="../data/index.html">Data</a></li>
+<li><a href="../filters/index.html">Filters</a></li>
+<li><a href="../forms/index.html">Forms</a></li>
+<li><a href="../security/index.html">Security</a></li>
+<li><a href="../styles/index.html">Styles</a></li>
+<li><a href="../templates/index.html">Templates</a></li>
+<li><a href="../../../en/index.html">Table of Contents</a></li>
+</ol>
+</div>
+    
+    <script src="../../../_libs/js/jquery.min.js"></script>
+    <script src="../../../_libs/js/snippet.js"></script>
+    <script src="../../../_libs/js/bootstrap.min.js"></script>
+    <script src="../../../_libs/js/blockstrap.js"></script>
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55832346-2', 'auto');
+  ga('send', 'pageview');
+    
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-55832346-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>

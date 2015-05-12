@@ -1,0 +1,141 @@
+<div class="blocks panels">
+    {{#objs}}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Block Height
+            <a href="../height/{{height}}" class="link">{{height}}</a>
+            - Relayed {{extras.ago}} 
+            <a 
+                href="{{extras.json}}" 
+                class="btn btn-sm btn-primary pull-right"
+                target="_blank"
+            >JSON</a>
+            <span class="badge pull-right">
+                {{tx_count}} Transactions 
+            </span>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-5">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Output {{extras.currency}} Total
+                            <span class="badge">
+                                {{output_value_disp}} 
+                                {{req.chain.code}}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="row">
+                                <!--
+                                <div class="col-sm-3">
+                                    <select class="inline-fiat-switcher form-control">
+                                        <option value="usd">USD</option>
+                                        <option value="gbp">GBP</option>
+                                        <option value="myr">MYR</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                -->
+                                <div class="col-sm-7">
+                                    Fiat Value 
+                                </div>
+                                <div class="col-sm-5">
+                                    <span class="badge">
+                                        {{req.options.currency}} 
+                                        {{output_value_fiat_now}}
+                                    </span>
+                                </div>
+                            </div> 
+                        </li>
+                        <!--
+                        <li class="list-group-item">
+                            Transaction Volume
+                            <span class="badge">
+                                XXX-not-now
+                            </span>
+                        </li>
+                        -->
+                        <li class="list-group-item">
+                            Confirmations
+                            <span class="badge">
+                                {{confirmations}}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            Transaction Fees
+                            <span class="badge">
+                                {{fees_disp}} {{req.chain.code}} |
+                                {{req.options.currency}} {{fees_fiat_now}}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            Block Reward
+                            <span class="badge">
+                                {{coinbase_value_disp}} {{req.chain.code}} |
+                                {{req.options.currency}} {{coinbase_value_fiat_now}}
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <ul class="list-group">
+                        <li class="list-group-item large">
+                            Hash
+                            <span class="badge">
+                                <a href="../block/{{id}}">
+                                    {{id}}
+                                </a>
+                            </span>
+                        </li>
+                        <li class="list-group-item large">
+                            Previous
+                            <span class="badge">
+                                <a href="../block/{{prev_block_id}}">
+                                    {{prev_block_id}}
+                                </a>
+                            </span>
+                        </li>
+                        <li class="list-group-item large">
+                            Next
+                            <span class="badge">
+                                {{#next_block_id}}
+                                <a href="../block/{{next_block_id}}">
+                                    {{next_block_id}}
+                                </a>
+                                {{/next_block_id}}
+                                {{^next_block_id}}
+                                    Latest Block
+                                {{/next_block_id}}
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            Height
+                            <span class="badge">
+                                <a href="../height/{{height}}">
+                                    {{height}}
+                                </a>
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            Size
+                            <span class="badge">
+                                {{size}} KB
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/objs}}
+    {{^objs}}
+        <span class="alert alert-danger">
+            <p class="center">
+                <strong>SORRY</strong>: 
+                THERE ARE NO RESULTS AVAILABLE FOR THIS TERM
+            </p>
+        </span>
+    {{/objs}}
+
+</div>

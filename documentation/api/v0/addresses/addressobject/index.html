@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Address object | Addresses | API | Blockstrap Documentation</title>
+<meta name=”description” content=”The Address object returned from the Blockstrap API”>
+<link rel='shortcut icon' href='../../../../favicon.ico'>
+<link href="../../../../index.html" rel="canonical" />
+    <link href="../../../../_libs/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="../../../../_libs/css/blockstrap.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://blockstrap.com"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-nav" role="search" action="http://blockstrap.com/search/">
+            <!--
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-default">search</button>
+            -->
+            <a href="https://github.com/blockstrap/docs" class="btn btn-default">Get / Edit Docs via GitHub</a>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+                                <li class="">                                        <a href="http://blockstrap.com/">                        Home
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/downloads/">                        Downloads
+                    </a>
+                </li>
+                <li class="active dropdown">                                                        <a href="../../../../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                                            Docs
+<span class="caret"></span>                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                            <li class=" header">
+                                <a href="../../../../en/index.html#">Important</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/index.html#">Table of Contents</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/downloads/index.html">Downloads</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/plugins/index.html">Plugins</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/sdks/index.html">SDKs</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/changes/index.html">Change Log</a>
+                                </li>
+                            <li class=" header">
+                                <a href="../../../../en/applications/index.html">Applications</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/wallet/index.html">Wallet</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/explorer/index.html">Explorer</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/prioritizer.1.html">Priortizer</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/blockauth/index.html">BlockAuth</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/faucets/index.html">Faucets</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/applications/uploads/index.html">Blockchain Uploader</a>
+                                </li>
+                            <li class=" header">
+                                <a href="../../../../en/framework/index.html">Framework</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/started/index.html">Getting Started</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/core/index.html">Core</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/examples/index.html">Examples</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/modules/index.html">Modules</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/assets/index.html">Assets</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/extending/index.html">Extending</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../framework/styling/index.html">Styling</a>
+                                </li>
+                            <li class="active header">
+                                <a href="../../../index.html">API</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/api/v0/blocks.1.html">Blocks</a>
+                                </li>
+                                <li class="active sub">
+                                    <a href="../index.html">Addresses</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../transactions/index.html">Transactions</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../../en/api/v0/notes.1.html">Notes</a>
+                                </li>
+                    </ul>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/showcase/">                        Showcase
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/pricing/">                        Pricing
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/support/">                        Support
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/blog/">                        Blog
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockchains.io/">                        Explorer
+                    </a>
+                </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+    
+<div id="sidebar">
+    <ul id="top">
+            <li class="">
+                <a href="../../../../en/index.html#">Important</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../../en/index.html#">Table of Contents</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/downloads/index.html">Downloads</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/plugins/index.html">Plugins</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/sdks/index.html">SDKs</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/changes/index.html">Change Log</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="../../../../en/applications/index.html">Applications</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../../en/applications/wallet/index.html">Wallet</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/applications/explorer/index.html">Explorer</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/applications/prioritizer.1.html">Priortizer</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/applications/blockauth/index.html">BlockAuth</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/applications/faucets/index.html">Faucets</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/applications/uploads/index.html">Blockchain Uploader</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="../../../../en/framework/index.html">Framework</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../../framework/started/index.html">Getting Started</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/core/index.html">Core</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/examples/index.html">Examples</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/modules/index.html">Modules</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/assets/index.html">Assets</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/extending/index.html">Extending</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../framework/styling/index.html">Styling</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="../../../index.html">API</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../../en/api/v0/blocks.1.html">Blocks</a>
+                        </li>
+                        <li class="active">
+                            <a href="../index.html">Addresses</a>
+                        </li>
+                        <li class="">
+                            <a href="../../transactions/index.html">Transactions</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../../en/api/v0/notes.1.html">Notes</a>
+                        </li>
+                </ul>
+            </li>
+    </ul>
+</div>
+    
+<div id="main-content">
+    <h2>Address object</h2>
+<p>Represents an Address in the blockchain.</p>
+<p>Example Object (from <a href="https://api.blockstrap.com/v0/btc/address/id/1GPCsaSYwH6jcUf3BmgqXD6G5q1ZxJ3gUK?prettyprint=1">here</a>)</p>
+<pre><code>"address": {
+    "address_hash160": "a8bcf2bb4f5a2555f16c126131c5cf1ffa064326",
+    "address": "1GPCsaSYwH6jcUf3BmgqXD6G5q1ZxJ3gUK",
+    "outputs_count_confirmed": 19,
+    "outputs_value_confirmed": 132892785,
+    "inputs_count_confirmed": 28,
+    "inputs_value_confirmed": 135133812,
+    "outputs_count_unconfirmed": 0,
+    "outputs_value_unconfirmed": 0,
+    "inputs_count_unconfirmed": 0,
+    "inputs_value_unconfirmed": 0,
+    "outputs_count_total": 19,
+    "inputs_count_total": 28,
+    "inout_count_total": 47,
+    "outputs_value_total": 132892785,
+    "outputs_value_total_fiat_now": "512.98",
+    "outputs_value_total_disp": "1.32892785",
+    "inputs_value_total": 135133812,
+    "inputs_value_total_fiat_now": "521.63",
+    "inputs_value_total_disp": "1.35133812",
+    "inout_value_total": 268026597,
+    "inout_value_total_fiat_now": "1,034.60",
+    "inout_value_total_disp": "2.68026597",
+    "balance": 2241027,
+    "balance_fiat_now": "8.65",
+    "balance_disp": "0.02241027",
+    "balance_confirmations_required": 0
+}</code></pre>
+<h3>Elements</h3>
+<ul>
+<li><code>address_hash160</code>: String (hex), The hash160 of the Address' public key</li>
+<li><code>address</code>: String (base58), The 'id' of the Address</li>
+<li><code>outputs_count_confirmed</code>: Integer, The total number of outputs from this 'Address' that have been confirmed</li>
+<li><code>outputs_value_confirmed</code>: Integer, The total value (in satoshies) of outputs from this Address that have been confirmed</li>
+<li><code>inputs_count_confirmed</code>: Integer, The total number of inputs into this Address that have been confirmed</li>
+<li><code>inputs_value_confirmed</code>: Integer, The total value (in satoshies) of inputs into this Address that have been confirmed</li>
+<li><code>outputs_count_unconfirmed</code>: Integer, The total number of outputs from this 'Address' that are unconfirmed (i.e. not in a Block yet)</li>
+<li><code>outputs_value_unconfirmed</code>: Integer, The total value (in satoshies) of outputs from this Address that are unconfirmed (i.e. not in a Block yet)</li>
+<li><code>inputs_count_unconfirmed</code>: Integer, The total number of inputs into this Address that are unconfirmed (i.e. not in a Block yet)</li>
+<li><code>inputs_value_unconfirmed</code>: Integer, The total value (in satoshies) of inputs into this Address that are unconfirmed (i.e. not in a Block yet)</li>
+<li><code>outputs_count_total</code>: Integer, The total number of all outputs from this address (confirmed + unconfirmed)</li>
+<li><code>inputs_count_total</code>: Integer, The total number of all inputs from this address (confirmed + unconfirmed)</li>
+<li><code>inout_count_total</code>: Integer, The total number of both inputs and outputs to and from this Address</li>
+<li><code>outputs_value_total</code>: Integer, The total value (in satoshies) of all outputs from this address (confirmed and unconfirmed)</li>
+<li><code>outputs_value_total_fiat_now</code>: String. A representation of the <em>Approximate</em> value of the <code>outputs_value_total</code> in the specified fiat currency</li>
+<li><code>outputs_value_total_disp</code>: String, A 'display friendly' representation of the <code>outputs_value_total</code> value (in full coins)</li>
+<li><code>inputs_value_total</code>: Integer, The total value (in satoshies) of all inputs to this address (confirmed and unconfirmed)</li>
+<li><code>inputs_value_total_fiat_now</code>: String. A representation of the <em>Approximate</em> value of the <code>inputs_value_total</code> in the specified fiat currency</li>
+<li><code>inputs_value_total_disp</code>: String, A 'display friendly' representation of the <code>inputs_value_total</code> value (in full coins)</li>
+<li><code>inout_value_total</code>: Integer, The total value (in satoshies) of all inputs and outputs to and form this address (confirmed and unconfirmed)</li>
+<li><code>inout_value_total_fiat_now</code>: String. A representation of the <em>Approximate</em> value of the <code>inout_value_total</code> in the specified fiat currency</li>
+<li><code>inout_value_total_disp</code>: String, A 'display friendly' representation of the <code>inout_value_total</code> value (in full coins)</li>
+<li><code>balance</code>: Integer, The balance (in satoshies) of value in the Address</li>
+<li><code>balance_fiat_now</code>: String. A representation of the <em>Approximate</em> value of the Address' balance in the specified fiat currency</li>
+<li><code>balance_disp</code>: A 'display friendly' representation of the Address' balance (in full coins)</li>
+<li><code>balance_confirmations_required</code>: Integer, The number of confirmations required before a input/output is included in these figures</li>
+</ul>
+<h4>Also see</h4>
+<ul>
+<li><a href="../../notes/values-and-currencies/index.html">Values and Currency</a> How we handle values and currencies</li>
+<li><a href="../../notes/requestobject/index.html">Request object</a></li>
+<li><a href="../../notes/chains/index.html">Supported Chains</a></li>
+</ul>
+<ol>
+<li><a href="../../../index.html">Return to API</a></li>
+<li><a href="../index.html">Return to Addresses</a></li>
+<li><a href="../../../../en/api/v0/addresses/addressobject.html">Address object</a></li>
+<li><a href="../address-id/index.html">Address</a></li>
+<li><a href="../address-ids/index.html">Addresses</a></li>
+<li><a href="../address-transactions/index.html">Address Transactions</a></li>
+<li><a href="../address-unspents/index.html">Address Unspents</a></li>
+<li><a href="../address-from-hash160/index.html">Address Hash 160 To Address</a></li>
+</ol>
+</div>
+    
+    <script src="../../../../_libs/js/jquery.min.js"></script>
+    <script src="../../../../_libs/js/snippet.js"></script>
+    <script src="../../../../_libs/js/bootstrap.min.js"></script>
+    <script src="../../../../_libs/js/blockstrap.js"></script>
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55832346-2', 'auto');
+  ga('send', 'pageview');
+    
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-55832346-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>

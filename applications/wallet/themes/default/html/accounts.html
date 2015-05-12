@@ -1,0 +1,123 @@
+{{#accounts.panels}}
+    <div class="panel-wrapper {{css}}">
+        <div id="{{id}}" class="panel panel-default">
+            {{#header}}<div class="panel-heading">{{{header}}}</div>{{/header}}
+            {{#body}}<div class="panel-body padless">{{{body}}}</div>{{/body}}
+        </div>
+    </div>
+{{/accounts.panels}}
+
+<div class="panel-wrapper col-sm-12">
+    <div id="accounts" class="panel panel-default">
+        <div class="panel-body padless">
+            
+            <table class="table table-striped data-table" data-order="desc" data-order-by="0">
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="cell">
+                                Account
+                            </div>
+                        </th>
+                        <th>
+                            <div class="cell">
+                                Blockchain
+                            </div>
+                        </th>
+                        <th>
+                            <div class="cell">
+                                Address
+                            </div>
+                        </th>
+                        <th>
+                            <div class="cell">
+                                TX Count
+                            </div>
+                        </th>
+                        <th>
+                            <div class="cell">
+                                Balance
+                            </div>
+                        </th>
+                        <th>
+                            <div class="cell">
+                                Actions
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    {{#accounts.objects}}
+                        <tr id="table-row-{{id}}">
+                            <td>
+                                <div class="cell">
+                                    {{name}} 
+                                    <div class="hidden">
+                                        ({{balance}} {{blockchain.type}})
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    {{blockchain.type}}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <a href="?key={{address}}#address">{{address}}</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    {{tx_count}}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    {{balance}}
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <a 
+                                       href="#" 
+                                       class="btn btn-success btn-xs btn-access"
+                                       data-collection="accounts"
+                                       data-key="{{id}}"
+                                       title="Access Keys"
+                                    >
+                                    <i class="fa fa-key"><span>Access Keys</span></i>
+                                    </a>
+                                    <a 
+                                       href="#" 
+                                       class="btn btn-primary btn-xs btn-refresh"
+                                       data-collection="accounts"
+                                       data-key="{{id}}"
+                                       title="Update Account"
+                                    >
+                                    <i class="fa fa-refresh"><span>Update Account</span></i>
+                                    </a>
+                                    <a 
+                                       href="#" 
+                                       class="btn btn-danger btn-xs btn-remove"
+                                       data-collection="accounts"
+                                       data-element="table-row-{{id}}"
+                                       data-key="{{id}}"
+                                       data-confirm="{{password}}"
+                                       title="Remove Account"
+                                    >
+                                    <i class="fa fa-times"><span>Remove Account</span></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    {{/accounts.objects}}
+                </tbody>
+
+            </table>
+            
+        </div>
+    </div>
+</div>

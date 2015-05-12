@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Modules | Framework | Blockstrap Documentation</title>
+<meta name=”description” content=”Blockstrap Modules Provide Out-of-the-Box Components for Crypto-Currency Application Deveopment”>
+<link rel='shortcut icon' href='../../favicon.ico'>
+<link href="../../index.html" rel="canonical" />
+    <link href="../../_libs/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="../../_libs/css/blockstrap.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://blockstrap.com"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-nav" role="search" action="http://blockstrap.com/search/">
+            <!--
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-default">search</button>
+            -->
+            <a href="https://github.com/blockstrap/docs" class="btn btn-default">Get / Edit Docs via GitHub</a>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+                                <li class="">                                        <a href="http://blockstrap.com/">                        Home
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/downloads/">                        Downloads
+                    </a>
+                </li>
+                <li class="active dropdown">                                                        <a href="../../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                                            Docs
+<span class="caret"></span>                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                            <li class=" header">
+                                <a href="../../en/index.html#">Important</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../en/index.html#">Table of Contents</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../en/downloads/index.html">Downloads</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../en/plugins/index.html">Plugins</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../en/sdks/index.html">SDKs</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../en/changes/index.html">Change Log</a>
+                                </li>
+                            <li class=" header">
+                                <a href="../../en/applications/index.html">Applications</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../en/applications/wallet/index.html">Wallet</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../en/applications/explorer/index.html">Explorer</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../en/applications/prioritizer.1.html">Priortizer</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../en/applications/blockauth/index.html">BlockAuth</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../en/applications/faucets/index.html">Faucets</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../en/applications/uploads/index.html">Blockchain Uploader</a>
+                                </li>
+                            <li class="active header">
+                                <a href="../../en/framework/index.html">Framework</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../started/index.html">Getting Started</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../core/index.html">Core</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../examples/index.html">Examples</a>
+                                </li>
+                                <li class="active sub">
+                                    <a href="index.html">Modules</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../assets/index.html">Assets</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../extending/index.html">Extending</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../styling/index.html">Styling</a>
+                                </li>
+                            <li class=" header">
+                                <a href="../../api/index.html">API</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../en/api/v0/blocks.1.html">Blocks</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../api/v0/addresses/index.html">Addresses</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../api/v0/transactions/index.html">Transactions</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../en/api/v0/notes.1.html">Notes</a>
+                                </li>
+                    </ul>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/showcase/">                        Showcase
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/pricing/">                        Pricing
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/support/">                        Support
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/blog/">                        Blog
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockchains.io/">                        Explorer
+                    </a>
+                </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+    
+<div id="sidebar">
+    <ul id="top">
+            <li class="">
+                <a href="../../en/index.html#">Important</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../en/index.html#">Table of Contents</a>
+                        </li>
+                        <li class="">
+                            <a href="../../en/downloads/index.html">Downloads</a>
+                        </li>
+                        <li class="">
+                            <a href="../../en/plugins/index.html">Plugins</a>
+                        </li>
+                        <li class="">
+                            <a href="../../en/sdks/index.html">SDKs</a>
+                        </li>
+                        <li class="">
+                            <a href="../../en/changes/index.html">Change Log</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="../../en/applications/index.html">Applications</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../en/applications/wallet/index.html">Wallet</a>
+                        </li>
+                        <li class="">
+                            <a href="../../en/applications/explorer/index.html">Explorer</a>
+                        </li>
+                        <li class="">
+                            <a href="../../en/applications/prioritizer.1.html">Priortizer</a>
+                        </li>
+                        <li class="">
+                            <a href="../../en/applications/blockauth/index.html">BlockAuth</a>
+                        </li>
+                        <li class="">
+                            <a href="../../en/applications/faucets/index.html">Faucets</a>
+                        </li>
+                        <li class="">
+                            <a href="../../en/applications/uploads/index.html">Blockchain Uploader</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="../../en/framework/index.html">Framework</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../started/index.html">Getting Started</a>
+                        </li>
+                        <li class="">
+                            <a href="../core/index.html">Core</a>
+                        </li>
+                        <li class="">
+                            <a href="../examples/index.html">Examples</a>
+                        </li>
+                        <li class="active">
+                            <a href="index.html">Modules</a>
+                        </li>
+                        <li class="">
+                            <a href="../assets/index.html">Assets</a>
+                        </li>
+                        <li class="">
+                            <a href="../extending/index.html">Extending</a>
+                        </li>
+                        <li class="">
+                            <a href="../styling/index.html">Styling</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="../../api/index.html">API</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../en/api/v0/blocks.1.html">Blocks</a>
+                        </li>
+                        <li class="">
+                            <a href="../../api/v0/addresses/index.html">Addresses</a>
+                        </li>
+                        <li class="">
+                            <a href="../../api/v0/transactions/index.html">Transactions</a>
+                        </li>
+                        <li class="">
+                            <a href="../../en/api/v0/notes.1.html">Notes</a>
+                        </li>
+                </ul>
+            </li>
+    </ul>
+</div>
+    
+<div id="main-content">
+    <h2>Blockstrap Modules</h2>
+<p>Modules are JavaScript files with a pre-defined pattern designed to communicate with core.</p>
+<p>The current modules distributed with core include:</p>
+<ul>
+<li><a href="accounts/index.html">Accounts</a></li>
+<li><a href="api/index.html">API</a></li>
+<li><a href="buttons/index.html">Buttons</a></li>
+<li><a href="contacts/index.html">Contacts</a></li>
+<li><a href="blockchains/index.html">Blockchains</a></li>
+<li><a href="data/index.html">Data</a></li>
+<li><a href="filters/index.html">Filters</a></li>
+<li><a href="forms/index.html">Forms</a></li>
+<li><a href="security/index.html">Security</a></li>
+<li><a href="styles/index.html">Styles</a></li>
+<li><a href="templates/index.html">Templates</a></li>
+</ul>
+<hr />
+<p>An example skeleton module that has only a single <code>test</code> function should be constructed as follows:</p>
+<!--pre-javascript-->
+<pre><code>(function($) 
+{
+    // EMPTY OBJECT
+    var example = {};
+
+    // THIS IS AN EXAMPLE FUNCTION
+    example.test = function()
+    {
+        // THIS WOULD BE ACCESSED AS FOLLOWS
+        // $.fn.blockstrap.example.test();
+        alert('Test Activated');
+    }
+
+    // MERGE THE NEW FUNCTIONS WITH CORE
+    $.extend(true, $.fn.blockstrap, {example:example});
+})
+(jQuery);</code></pre>
+<p>When including a <code>theme</code> module within your theme you are required to add a <code>new</code> function as seen in <code>themes/default/js/modules/theme.js</code>.</p>
+<!--pre-javascript-->
+<pre><code>(function($) 
+{
+    // EMPTY OBJECT
+    var theme = {};
+
+    // THIS IS CALLED EACH TIME NEW CONTENT IS ADDED TO DOM
+    theme.new = function()
+    {
+        // BY DEFAULT THIS DOES NOTHING YET
+    }
+
+    // MERGE THE NEW FUNCTIONS WITH CORE
+    $.extend(true, $.fn.blockstrap, {theme:theme});
+})
+(jQuery);</code></pre>
+<p>Please note that the <strong>priority theme</strong> auto-includes filters and button actions as seen in <code>themes/priority/js/modules/theme.js</code>:</p>
+<!--pre-javascript-->
+<pre><code>(function($) 
+{
+    // EMPTY OBJECT
+    var theme = {};
+
+    // THIS IS CALLED EACH TIME NEW CONTENT IS ADDED TO DOM
+    theme.new = function()
+    {
+        alert('theme.new activated');
+    }
+
+    // OPTIONALLY AUTO-LOADED THEME FILTERS
+    // ADD AS MANY AS YOU LIKE
+    theme.filters.test = function(bs, data)
+    {
+        return data;
+    }
+
+    // OPTIONALLY AUTO-LOADED BUTTON FUNCTIONS
+    // ADD AS MANY AS YOU LIKE
+    theme.buttons.test = function()
+    {
+        alert('Button Clicked');
+    }
+
+    // MERGE THE NEW FUNCTIONS WITH CORE
+    $.extend(true, $.fn.blockstrap, {theme:theme});
+})
+(jQuery);</code></pre>
+<p>This is because all filters and buttons set correctly within theme modules autommatically get assigned.</p>
+<p>You make pick and choose which modules to include within your theme or easily write and include your own with <a href="../core/configuration/index.html">configuration</a> as follows:</p>
+<!--pre-javascript-->
+<pre><code>{
+    "modules": [
+        "my_new_module"
+    ]
+}</code></pre>
+<p>Please note that some modules may try to utilize other modules and at the moment there is <strong>very limited support for missing modules</strong>.</p>
+<p>In addition, there is currently no module dependency management.</p>
+<hr />
+<ol>
+<li>Related Articles</li>
+<li><a href="accounts/index.html">Accounts</a></li>
+<li><a href="api/index.html">API</a></li>
+<li><a href="buttons/index.html">Buttons</a></li>
+<li><a href="contacts/index.html">Contacts</a></li>
+<li><a href="blockchains/index.html">Blockchains</a></li>
+<li><a href="data/index.html">Data</a></li>
+<li><a href="filters/index.html">Filters</a></li>
+<li><a href="forms/index.html">Forms</a></li>
+<li><a href="security/index.html">Security</a></li>
+<li><a href="styles/index.html">Styles</a></li>
+<li><a href="templates/index.html">Templates</a></li>
+<li><a href="../../en/index.html">Table of Contents</a></li>
+</ol>
+</div>
+    
+    <script src="../../_libs/js/jquery.min.js"></script>
+    <script src="../../_libs/js/snippet.js"></script>
+    <script src="../../_libs/js/bootstrap.min.js"></script>
+    <script src="../../_libs/js/blockstrap.js"></script>
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55832346-2', 'auto');
+  ga('send', 'pageview');
+    
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-55832346-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>

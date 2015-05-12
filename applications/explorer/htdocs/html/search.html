@@ -1,0 +1,543 @@
+{{#search_success}}
+    {{#is_block}}
+    <div class="blocks panels">
+        {{#objs}}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Block #
+                <a 
+                    href="../../../{{block.extras.code}}/height/{{block.height}}"
+                    class="link"
+                >
+                    {{block.height}}
+                </a> 
+                - Relayed {{block.extras.ago}} 
+                <span class="badge pull-right">
+                    {{block.tx_count}} Transactions
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-5">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Output {{block.extras.currency}} Total
+                                <span class="badge">
+                                    {{block.output_value_disp}} 
+                                    {{req.chain.code}}
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <!--
+                                    <div class="col-sm-3">
+                                        <select class="inline-fiat-switcher form-control">
+                                            <option value="usd">USD</option>
+                                            <option value="gbp">GBP</option>
+                                            <option value="myr">MYR</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                    -->
+                                    <div class="col-sm-7">
+                                        Fiat Value 
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <span class="badge">
+                                            {{req.options.currency}} 
+                                            {{block.output_value_fiat_now}}
+                                        </span>
+                                    </div>
+                                </div> 
+                            </li>
+                            <!--
+                            <li class="list-group-item">
+                                Transaction Volume
+                                <span class="badge">
+                                    XXX-not-now
+                                </span>
+                            </li>
+                            -->
+                            <li class="list-group-item">
+                                Confirmations
+                                <span class="badge">
+                                    {{block.confirmations}}
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                Transaction Fees
+                                <span class="badge">
+                                    {{block.fees_disp}} {{req.chain.code}} |
+                                    {{req.options.currency}} {{block.fees_fiat_now}}
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                Block Reward
+                                <span class="badge">
+                                    {{block.coinbase_value_disp}} {{req.chain.code}} |
+                                    {{req.options.currency}} {{block.coinbase_value_fiat_now}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7">
+                        <ul class="list-group">
+                            <li class="list-group-item large">
+                                Hash
+                                <span class="badge">
+                                    <a href="../../../{{block.extras.code}}/block/{{block.id}}">
+                                        {{block.id}}
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="list-group-item large">
+                                Previous
+                                <span class="badge">
+                                    <a href="../../../{{block.extras.code}}/block/{{block.prev_block_id}}">
+                                        {{block.prev_block_id}}
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="list-group-item large">
+                                Next
+                                <span class="badge">
+                                    <a href="../../../{{block.extras.code}}/block/{{block.next_block_id}}">
+                                        {{block.next_block_id}}
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                Height
+                                <span class="badge">
+                                    {{block.height}}
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                Size
+                                <span class="badge">
+                                    {{block.size}} KB
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{/objs}}
+
+    </div>
+    {{/is_block}}
+    {{#is_address}}
+    <div class="blocks panels">
+        {{#objs}}
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Address: 
+                    <a 
+                        href="../../../{{address.extras.code}}/address/{{address.address}}"
+                        class="link"
+                    >
+                        {{address.address}}
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Total Recieved
+                                    <span class="badge">
+                                        {{address.inout_value_total_disp}}
+                                        {{req.chain.code}}
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    Final Balance
+                                    <span class="badge">
+                                        {{address.balance_disp}} 
+                                        {{req.chain.code}}
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <!--
+                                        <div class="col-sm-3">
+                                            <select class="inline-fiat-switcher form-control">
+                                                <option value="usd">USD</option>
+                                                <option value="gbp">GBP</option>
+                                                <option value="myr">MYR</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                        -->
+                                        <div class="col-sm-7">
+                                            Fiat Balance 
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <span class="badge">
+                                                {{req.options.currency}} 
+                                                {{address.balance_fiat_now}}
+                                            </span>
+                                        </div>
+                                    </div> 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-7">
+                            <ul class="list-group">
+                                <li class="list-group-item large">
+                                    Transactions
+                                    <span class="badge spent">
+                                        {{address.outputs_count_total}} Out
+                                    </span>
+                                    <span class="badge unspent">
+                                        {{address.inputs_count_total}} In
+                                    </span>
+                                    <span class="badge">
+                                        {{address.inout_count_total}} Txs
+                                    </span>
+                                </li>
+                                <li class="list-group-item large">
+                                    Address
+                                    <!--
+                                    <a class="btn btn-default btn-xs pull-right" href="#">
+                                        QR CODE
+                                    </a>
+                                    -->
+                                    <span class="badge">
+                                        {{address.address}}
+                                    </span>
+                                </li>
+                                <li class="list-group-item large">
+                                    Hash
+                                    <span class="badge">
+                                        {{address.address_hash160}}
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="proxima">Transactions</h4>
+            <div class="filters"></div>
+
+            {{#address.transactions}}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-md-7">
+                                TX
+                                <a href="../../../{{address.extras.code}}/transaction/{{id}}" class="title">
+                                    {{id}}
+                                </a>
+                            </div>
+                            <div class="col-md-5">
+                                <span class="badge pull-right">
+                                    {{tx_value_disp}} {{req.chain.code}} | 
+                                    {{req.options.currency}} {{tx_value_fiat_now}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        Time
+                                        <span class="badge">
+                                            {{ago}}
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-7">
+                                <ul class="list-group">
+                                    <li class="list-group-item large">
+                                        TXID
+                                        <span class="badge">
+                                            <a href="../../../{{address.extras.code}}/transaction/{{id}}">
+                                                {{id}}
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row ios">
+                            <div class="col-md-6">
+                                <ul class="list-group">
+                                    <li class="list-group-item header">
+                                        Inputs
+                                    </li>
+                                    {{#inputs}}
+                                        <li class="list-group-item">
+                                            <a href="../../../{{this_chain}}/address/{{address}}">
+                                                {{address}}
+                                            </a>
+                                            <span class="badge spent">
+                                                {{value_disp}} {{req.chain.code}} | 
+                                                {{req.options.currency}} {{value_fiat_now}}
+                                            </span>
+                                        </li>
+                                    {{/inputs}}
+                                    {{^inputs}}
+                                        <li class="list-group-item">
+                                            {{#is_coinbase}}
+                                                Mined Coins
+                                            {{/is_coinbase}}
+                                            {{^is_coinbase}}
+                                            {{/is_coinbase}}
+                                        </li>
+                                    {{/inputs}}
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group">
+                                    <li class="list-group-item header">
+                                        Outputs
+                                    </li>
+                                    {{#outputs}}
+                                        <li class="list-group-item">
+                                            <a href="../../../{{this_chain}}/address/{{address}}">
+                                                {{address}}
+                                            </a>
+                                            <span class="badge spent">
+                                                {{value_disp}} {{req.chain.code}} | 
+                                                {{req.options.currency}} {{value_fiat_now}}
+                                            </span>
+                                        </li>
+                                    {{/outputs}}
+                                    {{^outputs}}
+                                        <li class="list-group-item">
+                                            No Outputs
+                                        </li>
+                                    {{/outputs}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/address.transactions}}
+
+            <!--
+
+            <h6 class="paging-text">
+                Page 1 of 10
+                <span>(Showing 10 Transactions per Page)</span>
+            </h6>
+
+            <ul class="pagination pagination-lg">
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+
+            -->
+
+        {{/objs}}
+    </div>
+    {{/is_address}}
+    {{#is_transaction}}
+    <div class="blocks panels">
+        {{#objs}}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    TXID: 
+                    <a 
+                        href="../../../{{tx.extras.code}}/transaction/{{tx.id}}"
+                        class="link"
+                    >
+                        {{tx.id}}
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Total Input
+                                    <span class="badge">
+                                        {{tx.input_value_disp}} 
+                                        {{req.chain.code}} | 
+                                        {{req.options.currency}} 
+                                        {{tx.input_value_fiat_now}}
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    Total Output
+                                    <span class="badge">
+                                        {{tx.output_value_disp}} 
+                                        {{req.chain.code}} | 
+                                        {{req.options.currency}} 
+                                        {{tx.output_value_fiat_now}}
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    Fees
+                                    <span class="badge">
+                                        {{tx.fees_disp}} 
+                                        {{req.chain.code}} | 
+                                        {{req.options.currency}} 
+                                        {{tx.fees_fiat_now}}
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    {{req.chain.code}} TX Value
+                                    <span class="badge">
+                                        {{tx.extras.value}} {{req.chain.code}}
+                                    </span>
+                                </li>
+                                <!--
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <select class="inline-fiat-switcher form-control">
+                                                <option value="usd">USD</option>
+                                                <option value="gbp">GBP</option>
+                                                <option value="myr">MYR</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            Fiat TX Value 
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <span class="badge">
+                                                {{req.options.currency}} XXX
+                                            </span>
+                                        </div>
+                                    </div> 
+                                </li>
+                                -->
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item large">
+                                    Added to Block
+                                    <span class="badge">
+                                        {{tx.extras.tx_time_ago}}
+                                    </span>
+                                </li>
+                                <li class="list-group-item large">
+                                    Block
+                                    <span class="badge">
+                                        <a href="../../../{{tx.extras.code}}/height/{{tx.block_height}}">
+                                            {{tx.block_height}}
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="list-group-item large">
+                                    Block Time
+                                    <span class="badge">
+                                        {{tx.extras.block_time}}
+                                    </span>
+                                </li>
+                                <li class="list-group-item large">
+                                    Confirmations
+                                    <span class="badge unspent">
+                                        {{tx.confirmations}} Confirmations
+                                    </span>
+                                </li>
+                                <!--
+                                <li class="list-group-item">
+                                    Size
+                                    <span class="badge">
+                                        {{tx.size}} Bytes
+                                    </span>
+                                </li>
+                                -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row ios">
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item header">
+                                    Inputs
+                                </li>
+                                {{#tx.inputs}}
+                                    <li class="list-group-item">
+                                        <a href="../../../{{tx.extras.code}}/address/{{address}}">
+                                            {{address}}
+                                        </a>
+                                        <span class="badge spent">
+                                            {{value_disp}} {{req.chain.code}} |
+                                            {{req.options.currency}} {{value_fiat_now}}
+                                        </span>
+                                    </li>
+                                {{/tx.inputs}}
+                                {{^tx.inputs}}
+                                    <li class="list-group-item">
+                                        {{#tx.is_coinbase}}
+                                            Mined Coins
+                                            <span class="badge">
+                                                {{block.coinbase_disp}} 
+                                                {{req.chain.code}} |
+                                                {{req.options.currency}} 
+                                                {{block.coinbase_value_fiat_now}}
+                                            </span>
+                                        {{/tx.is_coinbase}}
+                                        {{^tx.is_coinbase}}
+                                            No Inputs
+                                        {{/tx.is_coinbase}}
+                                    </li>
+                                {{/tx.inputs}}
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item header">
+                                    Outputs
+                                </li>
+                                {{#tx.outputs}}
+                                    <li class="list-group-item">
+                                        <a href="../../../{{tx.extras.code}}/address/{{address}}">
+                                            {{address}}
+                                        </a>
+                                        {{#is_spent}}
+                                        <span class="badge spent">
+                                        {{/is_spent}}
+                                        {{^is_spent}}
+                                        <span class="badge unspent">
+                                        {{/is_spent}}
+                                            {{value_disp}} {{req.chain.code}} |
+                                            {{req.options.currency}} {{value_fiat_now}}
+                                        </span>
+                                    </li>
+                                {{/tx.outputs}}
+                                {{^tx.outputs}}
+                                    <li class="list-group-item">
+                                        No Outputs
+                                    </li>
+                                {{/tx.outputs}}
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        {{/objs}}
+    </div>
+    {{/is_transaction}}
+{{/search_success}}
+{{^search_success}}
+    <span class="alert alert-danger">
+        <p class="center">
+            <strong>SORRY</strong>: 
+            NO RESULTS FOR THIS SEARCH TERM (YET)
+        </p>
+    </span>
+{{/search_success}}

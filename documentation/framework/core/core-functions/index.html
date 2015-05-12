@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Core Functions | Assets | Framework | Blockstrap Documentation</title>
+<meta name=”description” content=”Learn about the functions available from within the Blockstrap Framework core module”>
+<link rel='shortcut icon' href='../../../favicon.ico'>
+<link href="../../../index.html" rel="canonical" />
+    <link href="../../../_libs/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="../../../_libs/css/blockstrap.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://blockstrap.com"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-nav" role="search" action="http://blockstrap.com/search/">
+            <!--
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-default">search</button>
+            -->
+            <a href="https://github.com/blockstrap/docs" class="btn btn-default">Get / Edit Docs via GitHub</a>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+                                <li class="">                                        <a href="http://blockstrap.com/">                        Home
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/downloads/">                        Downloads
+                    </a>
+                </li>
+                <li class="active dropdown">                                                        <a href="../../../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                                            Docs
+<span class="caret"></span>                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                            <li class=" header">
+                                <a href="../../../en/index.html#">Important</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../en/index.html#">Table of Contents</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/downloads/index.html">Downloads</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/plugins/index.html">Plugins</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/sdks/index.html">SDKs</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/changes/index.html">Change Log</a>
+                                </li>
+                            <li class=" header">
+                                <a href="../../../en/applications/index.html">Applications</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/wallet/index.html">Wallet</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/explorer/index.html">Explorer</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/prioritizer.1.html">Priortizer</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/blockauth/index.html">BlockAuth</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/faucets/index.html">Faucets</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/applications/uploads/index.html">Blockchain Uploader</a>
+                                </li>
+                            <li class="active header">
+                                <a href="../../../en/framework/index.html">Framework</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../started/index.html">Getting Started</a>
+                                </li>
+                                <li class="active sub">
+                                    <a href="../index.html">Core</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../examples/index.html">Examples</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../modules/index.html">Modules</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../assets/index.html">Assets</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../extending/index.html">Extending</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../styling/index.html">Styling</a>
+                                </li>
+                            <li class=" header">
+                                <a href="../../../api/index.html">API</a>
+                            </li>
+                                <li class=" sub">
+                                    <a href="../../../en/api/v0/blocks.1.html">Blocks</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../api/v0/addresses/index.html">Addresses</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../api/v0/transactions/index.html">Transactions</a>
+                                </li>
+                                <li class=" sub">
+                                    <a href="../../../en/api/v0/notes.1.html">Notes</a>
+                                </li>
+                    </ul>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/showcase/">                        Showcase
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/pricing/">                        Pricing
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/support/">                        Support
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockstrap.com/blog/">                        Blog
+                    </a>
+                </li>
+                                <li class="">                                        <a href="http://blockchains.io/">                        Explorer
+                    </a>
+                </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+    
+<div id="sidebar">
+    <ul id="top">
+            <li class="">
+                <a href="../../../en/index.html#">Important</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../en/index.html#">Table of Contents</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/downloads/index.html">Downloads</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/plugins/index.html">Plugins</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/sdks/index.html">SDKs</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/changes/index.html">Change Log</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="../../../en/applications/index.html">Applications</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../en/applications/wallet/index.html">Wallet</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/applications/explorer/index.html">Explorer</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/applications/prioritizer.1.html">Priortizer</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/applications/blockauth/index.html">BlockAuth</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/applications/faucets/index.html">Faucets</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/applications/uploads/index.html">Blockchain Uploader</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="active">
+                <a href="../../../en/framework/index.html">Framework</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../started/index.html">Getting Started</a>
+                        </li>
+                        <li class="active">
+                            <a href="../index.html">Core</a>
+                        </li>
+                        <li class="">
+                            <a href="../../examples/index.html">Examples</a>
+                        </li>
+                        <li class="">
+                            <a href="../../modules/index.html">Modules</a>
+                        </li>
+                        <li class="">
+                            <a href="../../assets/index.html">Assets</a>
+                        </li>
+                        <li class="">
+                            <a href="../../extending/index.html">Extending</a>
+                        </li>
+                        <li class="">
+                            <a href="../../styling/index.html">Styling</a>
+                        </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="../../../api/index.html">API</a>
+                <ul class="sub">
+                        <li class="">
+                            <a href="../../../en/api/v0/blocks.1.html">Blocks</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../api/v0/addresses/index.html">Addresses</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../api/v0/transactions/index.html">Transactions</a>
+                        </li>
+                        <li class="">
+                            <a href="../../../en/api/v0/notes.1.html">Notes</a>
+                        </li>
+                </ul>
+            </li>
+    </ul>
+</div>
+    
+<div id="main-content">
+    <h1>Core Functions <a name="docs_home"></a></h1>
+<h3>Core Functions &amp; Variables</h3>
+<p>This is often called by first setting <code>var bs = $.fn.blockstrap;</code>.</p>
+<p>You can then use the following functions once core has been fully initialized:</p>
+<ul>
+<li><a href="index.html#bs_ago"><code>bs.core.ago</code>(time)</a></li>
+<li><a href="index.html#bs_add_action"><code>bs.core.add_action</code>(hook, key, bs_module, bs_function, vars)</a></li>
+<li><a href="index.html#bs_add_commas"><code>bs.core.add_commas</code>(num)</a></li>
+<li><a href="index.html#bs_apply_actions"><code>bs.core.apply_actions</code>(hook)</a></li>
+<li><a href="index.html#bs_boot"><code>bs.core.boot</code>(bootstrap, key, html, index, callback)</a></li>
+<li><a href="index.html#bs_bootstrap"><code>bs.core.bootstrap</code>(index, bootstrap, callback)</a></li>
+<li><a href="index.html#bs_buttons"><code>bs.core.buttons</code>()</a></li>
+<li><a href="index.html#bs_confirm"><code>bs.core.confirm</code>(title, content, confirmed_callback, cancel_callback)</a></li>
+<li><a href="index.html#bs_css"><code>bs.core.css</code>(callback, files)</a></li>
+<li><a href="index.html#bs_defaults"><code>bs.core.defaults</code>()</a></li>
+<li><a href="index.html#bs_filter"><code>bs.core.filter</code>(data)</a></li>
+<li><a href="index.html#bs_forms"><code>bs.core.forms</code>()</a></li>
+<li><a href="index.html#bs_get"><code>bs.core.get</code>(file, extension, callback, skip)</a></li>
+<li><a href="index.html#bs_image"><code>bs.core.image</code>(input, callback)</a></li>
+<li><a href="index.html#bs_init"><code>bs.core.init</code>()</a></li>
+<li><a href="index.html#bs_less"><code>bs.core.less</code>(callback)</a></li>
+<li><a href="index.html#bs_loaded"><code>bs.core.loaded</code>()</a></li>
+<li><a href="index.html#bs_loader"><code>bs.core.loader</code>(state)</a></li>
+<li><a href="index.html#bs_modal"><code>bs.core.modal</code>(title, content, id)</a></li>
+<li><a href="index.html#bs_modals"><code>bs.core.modals</code>(action)</a></li>
+<li><a href="index.html#bs_nav"><code>bs.core.nav</code>(slug)</a></li>
+<li><a href="index.html#bs_option"><code>bs.core.option</code>(key, default_value)</a></li>
+<li><a href="index.html#bs_page"><code>bs.core.page</code>()</a></li>
+<li><a href="index.html#bs_patch"><code>bs.core.patch</code>(version, callback)</a></li>
+<li><a href="index.html#bs_plugins"><code>bs.core.plugins</code>(index, plugins, callback)</a></li>
+<li><a href="index.html#bs_print"><code>bs.core.print</code>(contents)</a></li>
+<li><a href="index.html#bs_publicize"><code>bs.core.publicize</code>(callback)</a></li>
+<li><a href="index.html#bs_ready"><code>bs.core.ready</code>()</a></li>
+<li><a href="index.html#bs_refresh"><code>bs.core.refresh</code>(callback, slug)</a></li>
+<li><a href="index.html#bs_reset"><code>bs.core.reset</code>(reload)</a></li>
+<li><a href="index.html#bs_resize"><code>bs.core.resize</code>(delay)</a></li>
+<li><a href="index.html#bs_resized"><code>bs.core.resized</code>(delay)</a></li>
+<li><a href="index.html#bs_salt"><code>bs.core.salt</code>(modules, callback, salt)</a></li>
+<li><a href="index.html#bs_settings"><code>bs.core.settings</code>(element)</a></li>
+<li><a href="index.html#bs_string_to_array"><code>bs.core.string_to_array</code>(string)</a></li>
+<li><a href="index.html#bs_stringed"><code>bs.core.stringed</code>(styles)</a></li>
+<li><a href="index.html#bs_table"><code>bs.core.table</code>()</a></li>
+<li><a href="index.html#bs_test_results"><code>bs.core.test_results</code>(expected, given, index, total, title, api_service, chain_count, chain_total)</a></li>
+<li><a href="index.html#bs_test_results_table"><code>bs.core.test_results_table</code>(results)</a></li>
+<li><a href="index.html#bs_tests"><code>bs.core.tests</code>(run)</a></li>
+<li><a href="index.html#bs_txt"><code>bs.core.txt</code>(input, callback)</a></li>
+<li><a href="index.html#bs_upgrade"><code>bs.core.upgrade</code>(saved_version, this_version, refresh, callback)</a></li>
+</ul>
+<hr />
+<h4><code>bs.core.ago</code>(time) <a name="bs_ago" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function takes a timestamp (in seconds) and converts it into a written phrase, such as one minute ago. If your time is set to milliseconds, convert it by one thousand (1,000) before running it through the function. Multi-lingual options will be available before reaching version 1.0.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.add_action</code>(hook, key, bs_module, bs_function, vars) <a name="bs_add_action" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function allows you to add custom functionality into critical core processes without needing to edit core files. It works in a way very similar to the add and apply_actions functions found in WordPress. The <code>hook</code> variable defines which event you would like to tie your action to. The current hooks available within core include:</p>
+<ul>
+<li><code>init</code> - <em>called at the start of $.fn.blockstrap.core.init</em></li>
+<li><code>init_callback</code> - <em>called when the core.init function is completed</em></li>
+<li><code>ready</code> - <em> called at the end of $.fn.blockstrap.core.ready</em></li>
+</ul>
+<p>The <code>key</code> is used as a unique identifier for each function you would like to attach to the hook.</p>
+<p>The <code>bs_module</code> and <code>bs_function</code> variables allow you to define which function from which module you would like to run at the event, whereas the <code>vars</code> variable allows you to attach additional information to the function being called.</p>
+<p>An example of this can be seen in <code>/plugins/markets/markets.js</code> as follows:</p>
+<!--pre-javascript-->
+<pre><code>var conditions = 'something-important-to-pass-on';
+$.fn.blockstrap.core.add_action(
+    'init', 
+    'market_updates',
+    'plugins.markets', 
+    'update', 
+    conditions
+);</code></pre>
+<p>It is worth noting that calling regular modules does not require dot notation, but should you wish to call a plugin function you need to add the word plugin followed by a dot and then the plugin name in order to access its functions (as seen on line 5 above).</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.add_commas</code>(num) <a name="bs_add_commas" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function takes an integer and returns a string with comma formatting as follows:</p>
+<!--pre-javascript-->
+<pre><code>var price = $.fn.blockstrap.core.add_commas(12345);
+// price = '12,345'</code></pre>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.apply_actions</code>(hook) <a name="bs_apply_actions" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function attempts to call all the actions added the relevant <code>hook</code>.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.boot</code>(bootstrap, key, html, index, callback) <a name="bs_boot" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function loads each select Bootstrap component into <code>$.fn.blockstrap.snippets</code>. Once there, you could for example then get the relevant HTML Mustache template for lists by simply calling <code>$.fn.blockstrp.snippets['lists']</code>, which would contain the following HTML:</p>
+<!--pre-html-->
+<pre><code>{{#objects}}
+    &lt;ul id="{{id}}" class="list-group"&gt;
+
+        {{#items}}
+
+            {{#href}}
+                &lt;a href="{{href}}"&gt;
+                    &lt;li class="list-group-item {{css}}"&gt;
+                        &lt;div class="list-item-content"&gt;
+                            {{{html}}}
+                        &lt;/div&gt;
+                        {{#badge}}
+                            &lt;span class="badge"&gt;{{badge}}&lt;/span&gt;
+                        {{/badge}}
+                    &lt;/li&gt;
+                &lt;/a&gt;
+            {{/href}}
+            {{^href}}
+                &lt;li class="list-group-item {{css}}"&gt;
+                    &lt;div class="list-item-content"&gt;
+                        {{{html}}}
+                    &lt;/div&gt;
+                    {{#buttons}}
+                        &lt;a 
+                           href="{{href}}" 
+                           class="btn {{css}}" 
+                           {{#attributes}}
+                                {{key}}="{{value}}" 
+                           {{/attributes}}
+                        &gt;
+                            {{text}}
+                        &lt;/a&gt;
+                    {{/buttons}}
+                &lt;/li&gt;
+            {{/href}}
+
+        {{/items}}
+        {{^items}}
+            &lt;li class="list-group-item {{css}}"&gt;
+                {{{missing}}}
+            &lt;/li&gt;
+        {{/items}}
+
+    &lt;/ul&gt;
+{{/objects}}</code></pre>
+<p>This can then be merged with data using the <code>$.fn.blockstrap.templates.process</code> function to create fully-rendered content as follows:</p>
+<!--pre-javascript-->
+<pre><code>var html = $.fn.blockstrap.snippets['lists'];
+var data = {
+    objects = [
+        {
+            id: 'list-id',
+            items: [
+                {
+                    text: 'List Content'
+                }
+            ]
+        }
+    ]
+};
+var page_contents = Mustache.render(html, data);</code></pre>
+<p>The <code>page_contents</code> variable would then contain the following HTML:</p>
+<!--pre-html-->
+<pre><code>&lt;ul id="list-id"&gt;
+    &lt;li&gt;List Content&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.bootstrap</code>(index, bootstrap, callback) <a name="bs_bootstrap" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function cycles through an array to load the necessary components using <code>$.fn.blockstrap.core.boot()</code>.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.buttons</code>(classes, ids) <a name="bs_buttons" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>If no classes or IDs are passed into the function (as seen when loaded automatically during initialization) this function will check the configuration settings to determine which button classes and IDs to apply the assigned functions to. If arrays of classes and IDs are passed into the function, it will initiative the newly assigned buttons.</p>
+<p>If the classes array contianed the following:</p>
+<!--pre-javascript-->
+<pre><code>{
+    "classes": [
+        "print",
+        "qr"
+    ]
+}</code></pre>
+<p>This would try to assign the <code>$.fn.blocstrap.buttons.print</code> and <code>$.fn.blockstrap.buttons.qr</code> functions to the <code>.btn-print</code> and <code>.btn-qr</code> elements. Please note that classes that you wish to auto assign need to be prefixed with <code>btn</code>. If it could not find the necessary functionality within the <code>buttons</code> module it would attempt to seek out the same functions from <code>$.fn.blockstrap.theme.buttons.print</code> and <code>$.fn.blockstrap.theme.buttons.qr</code> before cancelling its self assignment.</p>
+<p>In the case of IDs, dashes in IDs get converted to underscores, so the following array:</p>
+<!--pre-javascript-->
+<pre><code>{
+    "ids": [
+        "submit-payment"
+    ]
+}</code></pre>
+<p>Would try to assign the <code>submit_payment</code> function to an element with an ID of <code>submit-payment</code>.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.confirm</code>(title, content, confirmed_callback, cancel_callback) <a name="bs_confirm" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function opens a modal window that mimics the functionality of a confirmation dialog, where the <code>title</code> and <code>content</code> variables define the contents of the modal window. The <code>confirmed_callback</code> and <code>cancel_callback</code> variables should be assigned functions that run according to the user's selection.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.css</code>(callback, files) <a name="bs_css" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function cycles through the configured array of files and adds them to the header as available. It will try to search the core <code>blockstrap/css/</code> folder if it is first unable to find them within your active theme CSS folder (<code>themes/&lt;active-theme&gt;/css/</code>). Once it has loaded all of the CSS files, it will then attempt to run the <code>callback</code> variable (which should be a function). If you include an array of <code>files</code> it will instead load these rather than those configured, which by default, include:</p>
+<!--pre-javascript-->
+<pre><code>{
+    "css": [
+        "less",
+        "font-awesome"
+    ]
+}</code></pre>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.defaults</code>() <a name="bs_defaults" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is auto-loaded by core at run-time and should not be run again. It checks for whether the <code>data</code> and <code>security</code> modules are included and if not, then provides the following skeleton functions (that prevent known errors from other modules):</p>
+<ul>
+<li>$.fn.blockstrap.data.find</li>
+<li>$.fn.blockstrap.data.save</li>
+<li>$.fn.blockstrap.security.logged_in</li>
+</ul>
+<p>These skeleton functions do nothing other than performing the associated callbacks.</p>
+<p>Ideally, this function should not need to exist, and by version 1.0, it will either be removed, or be more configurable.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.filter</code>(data) <a name="bs_filter" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function reccursively loops through data arrays in search of the <code>func</code> keyword, from which it will then assign the necessary function from the filters module (<a href="../../modules/filters/index.html"><code>$.fn.blockstrap.modules.filters</code></a>). For example and as seen within <code>themes/default/data/index.json</code>:</p>
+<!--pre-javascript-->
+<pre><code>{
+    "name": {
+        "func": "get",
+        "collection": "keys",
+        "key": "your_name"
+    }    
+}</code></pre>
+<p>As seen on line 3 above, when the <code>func</code> is used as a key it's value becomes the filter function called. Each filter function has its own requirements. In the case of <a href="../../modules/filters/index.html#filters_get"><code>$.fn.blockstrap.filters.get</code></a> a <code>collection</code> and <code>key</code> is required, which is then used in conjunction with <code>$.fn.blockstrap.data.find</code> in order to replace the value of the <code>name</code> object with the results collected from the find.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.forms</code>() <a name="bs_forms" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This is a horrid function and will be replaced very shortly with something much better. We do apologise for anyone brave enough to look through the source and see just how ugly this side-step became. It currently applies much of the fancy form magic used with the default theme, yet somehow managed to find its way into core. Again, sorry!</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.get</code>(file, extension, callback, skip) <a name="bs_get" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used to collect <strong>DATA</strong>.json files and <strong>TEMPLATE</strong>.html files. Assuming the <code>skip</code> variable has not been defined, it will use the <code>file</code>.<code>extension</code> variables to construct a file name that is then retrieved via AJAX, upon completing which the <code>callback</code> function is called.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.image</code>(input, callback) <a name="bs_image" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function takes an input with type <code>file</code> and then performs the necessary <code>callback</code> function when it is used to upload an image file.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.init</code>() <a name="bs_init" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is the final function called at the end of the <a href="../construct/index.html">Plugin Construct</a>. It is within this function that the content for the relevant page gets rendered. This function also contains two action hooks and flows as follows:</p>
+<ul>
+<li>Apply <code>init</code> Actions</li>
+<li>Perform <a href="index.html#bs_publicize"><code>$.fn.blockstrap.core.publicize</code></a></li>
+<li>If not logged-in, show <code>blockstrap/html/login.html</code> content</li>
+<li><strong>Else</strong> then continue with the following tasks:</li>
+<li>if <a href="../../modules/accounts/index.html">Accounts Module</a> activated, run <code>accounts.poll()</code></li>
+<li>Render Content Relevant to Slugs</li>
+<li>Run Tests (if configured to do so)</li>
+<li><strong>Once Page Rendered</strong> then continue with the following:</li>
+<li>Initiate DOM Related Functions</li>
+<li>Apply <code>init_callback</code> Actions</li>
+</ul>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.less</code>(callback) <a name="bs_less" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function should (in most cases) be used when developing new applications as it allows you to use <code>.less</code> files live within the browser. The results can be cached locally so that consecutive page loads do not require you to load each individual less file, but when you have a complete suite of individual less files (such as when loading the default less files) it can take quite some time during that initial loading sequence, but is nonetheless very useful when developing. If used when developing, the final results can be locked-down before going live and served as a compiled CSS file instead.</p>
+<p><strong><em>This function should not be called directly and is currently quite unstable with frustrating caching complexities!</em></strong></p>
+<p>Currently, it is called when set within your <a href="../configuration/index.html">core configuration</a> files as follows:</p>
+<!--pre-javascript-->
+<pre><code>{
+    "less": true
+}</code></pre>
+<p>If set to <code>true</code> the following <strong>base</strong> LESS file will be used as a starting point <code>themes/&lt;active-theme&gt;/less/blockstrap.less</code> if available.</p>
+<p>The <strong>default</strong> Theme's LESS file has the following starting point:</p>
+<!--pre-css-->
+<pre><code>// Import Core
+@import "../../../blockstrap/bootstrap/less/bootstrap.less";
+
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+// Switches
+@import "switch/bootstrap-switch.less";
+
+// Core App
+@import "app.less";
+
+// Responsiveness should be last
+@import "responsiveness.less";</code></pre>
+<p>As you can see from line 2 above, the <strong>default</strong> theme will also load each individual bootstrap component before loading its own theme-related files.</p>
+<p>Again, this can be both useful and annoying. Good luck!</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.loaded</code>() <a name="bs_loaded" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is part of the final call from the <a href="../construct/index.html">Plugin Construct</a>.</p>
+<p>It is used internally to store the <a href="../configuration/index.html">configured</a> <code>theme_name</code> before it then calls the <a href="index.html#bs_defaults"><code>core.defaults</code></a> function prior to <a href="index.html#bs_init"><code>core.init</code></a>.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.loader</code>(state) <a name="bs_loader" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>If called without a defined <code>state</code> a <code>loading</code> CSS class will either be added or removed to the application's parent container. If a <code>state</code> such as <strong>open</strong> or <strong>close</strong> is defined, smoother animation will be used to transist between the two states.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.modal</code>(title, content, id) <a name="bs_modal" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used to activate the <a href="http://getbootstrap.com/javascript/#modals">Bootstrap Modal</a> component. The <code>title</code> and <code>content</code> define what to display within the modal window, whereas the <code>id</code> variable is used to open a specific modal window with pre-defined content as seen within the following section inside <code>themes/default/data/index.json</code>:</p>
+<!--pre-javascript-->
+<pre><code>{
+    "modals": {
+        "func": "bootstrap",
+        "type": "modals",
+        "objects": [
+            {
+                "id": "default",
+                "title": "Title",
+                "body": "&lt;p&gt;Content.&lt;/p&gt;",
+                "close": "Cancel"
+            },
+            {
+                "id": "confirm",
+                "title": "Confirmation Required",
+                "body": "&lt;p&gt;Please re-confirm you want to do that?&lt;/p&gt;",
+                "close": "Cancel",
+                "footer": true,
+                "actions": [
+                    {
+                        "text": "Confirm",
+                        "css": "btn-success"
+                    }
+                ] 
+            }
+        }
+    }
+}</code></pre>
+<p>This would output the following HTML:</p>
+<!--pre-html-->
+<pre><code>&lt;div class="modal fade " id="default-modal"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;button type="button" class="close" data-dismiss="modal"&gt;
+                    &lt;span aria-hidden="true"&gt;×&lt;/span&gt;
+                    &lt;span class="sr-only"&gt;Close&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;h4 class="modal-title"&gt;Title&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body no-footer"&gt;
+                &lt;p&gt;Content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="modal fade " id="confirm-modal"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;button type="button" class="close" data-dismiss="modal"&gt;
+                    &lt;span aria-hidden="true"&gt;×&lt;/span&gt;
+                    &lt;span class="sr-only"&gt;Close&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;h4 class="modal-title"&gt;Confirmation Required&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                &lt;p&gt;Please re-confirm you want to do that?&lt;/p&gt;    
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-danger" data-dismiss="modal"&gt;Cancel&lt;/button&gt;
+                &lt;button type="button" class="btn btn-success"&gt;Confirm&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>With these two modals added to the DOM, the <code>$.fn.blockstrap.core.modal(false, false, 'confirm')</code> would result in the following:</p>
+<p><img alt="Default Confirmation Modal" src="../../../_libs/img/docs/framework/core/confirmation-modal.jpg" /></p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.modals</code>(action) <a name="bs_modals" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is a lot like <a href="index.html#bs_forms"><code>core.forms</code></a> in that it too is a bit of a mess and should hopefully be removed and or vastly improved by the time we reach version 1.0. Only the brave would dare spend the time getting their head around this one, but it basically runs a bunch of functions on potential modal content used by other modules and functions and should never be called directly so is probably worth forgetting (for now).</p>
+<p><strong>Howerver</strong>, there is one use it has in the form of the available <code>action</code> variable. If set to <code>close_all</code> it will close any and all open modal windows.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.nav</code>(slug) <a name="bs_nav" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function should be called when page content changes or loads and will add the <code>active</code> CSS class to the <a href="../configuration/index.html">configured</a> <code>navigation_id</code> and <code>mobile_nav_id</code> elements. If the <code>slug</code> equals <code>$.fn.blockstrap.settings.page_base</code> the slug will be converted to <code>$.fn.blockstrap.settings.slug_base</code>.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.option</code>(key, default_value) <a name="bs_option" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function returns the appropriate option as stored in localStorage. The appropriate options are defined during setup with the <code>data-setup-type</code> attributes used within the setup form, and by default include:</p>
+<ul>
+<li>api_service</li>
+<li>your_photo</li>
+<li>photo_salt</li>
+<li>your_question</li>
+<li>wallet_question</li>
+<li>wallet_choice</li>
+</ul>
+<p>The <code>key</code> variable defines which option you would like to search for whilst the <code>default_value</code> provides an optional value to return if the desired option is not available.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.page</code>() <a name="bs_page" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function returns the current page slug.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.patch</code>(version, callback) <a name="bs_patch" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function loads and initiates the requested patch. Patches are used to handle upgrade paths between specific versions without needing to store or serve the upgraded code from core. Patches currently need to be served from <code>/blockstrap/patches/</code> with each patch contained within its own folder as follows:</p>
+<ul>
+<li>index.html</li>
+<li>blockstrap
+<ul>
+<li>css</li>
+<li>js</li>
+<li>patches
+<ul>
+<li>0501
+<ul>
+<li>patch-0501.js</li>
+</ul></li>
+<li>0502
+<ul>
+<li>patch-0502.js</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><em>Please note that the <code>index.html</code> file and <code>css</code> and <code>js</code> folders are shown above for context only.</em></p>
+<p>We use folders in case patches require external files.</p>
+<p>The patch itself follows a style similar to plugins, requiring this minimum functionality:</p>
+<!--pre-javascript-->
+<pre><code>(function($) 
+{
+    var patch0501 = {};
+
+    patch0501.init = function(callback)
+    {
+        // ADD UPGRADE CODE HERE
+    }
+
+    // MERGE THE NEW FUNCTIONS WITH CORE
+    $.extend(true, $.fn.blockstrap.patches, {patch0501:patch0501});
+
+})
+(jQuery);</code></pre>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.plugins</code>(index, plugins, callback) <a name="bs_plugins" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used to store and serve plugins from cache. It cycles through the supplied <code>plugins</code> array and initiates the <code>callback</code> function upon completion.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.print</code>(contents) <a name="bs_print" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function opens a new print-friendly window containing the <code>contents</code> provided.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.publicize</code>(callback) <a name="bs_publicize" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function determines and sets the current user's role and then performs the provided <code>callback</code> function.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.ready</code>() <a name="bs_ready" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function should be called each time new content has been added to the DOM and in doing so performs the following functions:</p>
+<ul>
+<li><a href="index.html#bs_table"><code>$.fn.blockstrap.core.table()</code></a></li>
+<li><a href="index.html#bs_forms"><code>$.fn.blockstrap.core.forms()</code></a></li>
+<li><a href="index.html#bs_page"><code>$.fn.blockstrap.core.page()</code></a></li>
+<li><a href="index.html#bs_nav"><code>$.fn.blockstrap.core.nav()</code></a></li>
+</ul>
+<p>It also attempts to load the following functions if the relevant modules are available:</p>
+<ul>
+<li>$.fn.blockstrap.theme.new</li>
+<li>$.fn.blockstrap.buttons.new</li>
+</ul>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.refresh</code>(callback, slug) <a name="bs_refresh" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function will attempt to (re)-render the current page content and then peform the provided <code>callback</code> function. If however an optional <code>slug</code> variable is provided it will instead attempt to specifically load the relevant content related to the slug.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.reset</code>(reload) <a name="bs_reset" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function will clear all the related records from localStorage and if <code>reload</code> is set to <code>true</code> will then refresh the page.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.resize</code>(delay) <a name="bs_resize" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is a timeout wrapper for <code>core.resized</code> that allows the <code>delay</code> to be set as a variable.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.resized</code>(delay) <a name="bs_resized" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is called when new content is added to the DOM and the window is then subsequnetly resized. It currently then only calls:</p>
+<ul>
+<li><a href="index.html#bs_table"><code>$.fn.blockstrap.core.table</code></a></li>
+</ul>
+<p>This function will be more configurable before reaching version 1.0.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.salt</code>(modules, callback, salt) <a name="bs_salt" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used to generate the device salt. It takes a <code>modules</code> object variable and cycles through each, compounding the encryption as it goes and performing the necessary <code>callback</code> function upon completion. If an optional <code>salt</code> is included, it will use that as the initial starting point for its encryption, rather than using the internally set application ID (<code>$.fn.blockstrap.settings.id</code>).</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.settings</code>(element) <a name="bs_settings" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is called from within the <a href="index.html#bs_init"><code>core.init</code></a> function and transform the various data-attributes attached tothe provided <code>element</code> into configuration settings.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.string_to_array</code>(string) <a name="bs_string_to_array" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used by <a href="index.html#bs_settings"><code>core.settings</code></a> to convert strings from data-attributes constructed as follows:</p>
+<!--pre-html-->
+<pre><code>&lt;div data-plugins="[markets, test]"&gt;&lt;/div&gt;</code></pre>
+<p>Into the following array:</p>
+<!--pre-javascript-->
+<pre><code>{
+    plugins: [
+        markets,
+        test
+    ]
+}</code></pre>
+<p>The string must start with <code>[</code> and end with <code>]</code> whislt using the <code>', '</code> delimeter.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.stringed</code>(styles) <a name="bs_stringed" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used internally by the <a href="../../modules/styles/index.html">Styles Module</a> to convert strings to CSS attributes.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.table</code>() <a name="bs_table" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is auto-loaded when new content is added to the DOM. It searches for tables with the <code>data-tables</code> CSS class:</p>
+<!--pre-html-->
+<pre><code>&lt;table class="data-table"&gt;&lt;/table&gt;</code></pre>
+<p>It will automatically apply the <a href="http://datatables.net">DateTables Plugin</a> to any tables with this class.</p>
+<p>It then uses these additional data attributes as advanced DataTables options:</p>
+<!--pre-html-->
+<pre><code>&lt;table
+
+    class="data-table"
+    data-search=""
+    data-dom=""
+    data-order=""
+    data-order-by=""
+
+&gt;&lt;/table&gt;</code></pre>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.test_results</code>(expected, given, index, total, title, api_service, chain_count, chain_total) <a name="bs_test_results" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used to display the results related to <a href="index.html#bs_tests"><code>core.tests</code></a> and <strong>should not</strong> be called directly.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.test_results_table</code>(results) <a name="bs_test_results_table" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is also used to display the results related to <a href="index.html#bs_tests"><code>core.tests</code></a> and <strong>should not</strong> be called directly.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.tests</code>(run) <a name="bs_tests" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function <strong>should not</strong> be called directly, as it is automatically called if <a href="../configuration/index.html">configured</a> to do so with <code>tests: true</code>.</p>
+<p>These tests are strictly used in conjunction with the <a href="../../modules/api/index.html">API Module</a> with one example showing requirements as follows:</p>
+<!--pre-javascript-->
+<pre><code>{
+    "tests": {
+        "api": {
+            "address": {
+                "request": "1Nz5RqevRodefPyGVB8EpdwSEGS4Ax2f1k",
+                "results": {
+                    "address": "1Nz5RqevRodefPyGVB8EpdwSEGS4Ax2f1k",
+                    "balance": 10019000,
+                    "blockchain": "btc",
+                    "hash": "f1260c3cd86ecc03ce460c303ec0e8006e32273d",
+                    "received": 10019000,
+                    "tx_count": 2
+                }
+            }
+        }
+    }
+}</code></pre>
+<p>Another way to run the tests without changing the configuration is visiting <code>tests.html</code> instead of <code>index.html</code>.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.txt</code>(input, callback) <a name="bs_txt" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function takes an input with type <code>file</code> and then performs the necessary <code>callback</code> function when it is used to upload a <code>.txt</code> file.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<h4><code>bs.core.upgrade</code>(saved_version, this_version, refresh, callback) <a name="bs_upgrade" class="pull-right" href="index.html#docs_home"><i class="glyphicon glyphicon-upload"></i>- back to top</a></h4>
+<p>This function is used to manage the logic behind which upgrade paths lead to which <a href="index.html#bs_patch">patches</a> being loaded.</p>
+<p><small><a href="index.html#docs_home">- back to top</a></small></p>
+<hr />
+<ol>
+<li>Related Articles</li>
+<li><a href="../index.html">Return to Core</a></li>
+<li><a href="../configuration/index.html">Configuration Settings</a></li>
+<li><a href="../defaults/index.html">Defaults</a></li>
+<li><a href="index.html">Core Functions</a></li>
+<li><a href="../blockstrap-functions/index.html">Blockstrap Functions</a></li>
+<li><a href="../construct/index.html">Plugin Construct</a></li>
+<li><a href="../../../en/index.html">Table of Contents</a></li>
+</ol>
+</div>
+    
+    <script src="../../../_libs/js/jquery.min.js"></script>
+    <script src="../../../_libs/js/snippet.js"></script>
+    <script src="../../../_libs/js/bootstrap.min.js"></script>
+    <script src="../../../_libs/js/blockstrap.js"></script>
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55832346-2', 'auto');
+  ga('send', 'pageview');
+    
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-55832346-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,224 @@
+<div class="blocks panels">
+    {{#objs}}
+    
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Address 
+                {{address.address}}
+                <a 
+                   class="btn btn-primary btn-sm pull-right" 
+                   href="{{address.extras.json}}"
+                   target="_blank"
+                >JSON</a>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-5">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Total Recieved
+                                <span class="badge">
+                                    {{address.inout_value_total_disp}}
+                                    {{req.chain.code}}
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                Final Balance
+                                <span class="badge">
+                                    {{address.balance_disp}} 
+                                    {{req.chain.code}}
+                                </span>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <!--
+                                    <div class="col-sm-3">
+                                        <select class="inline-fiat-switcher form-control">
+                                            <option value="usd">USD</option>
+                                            <option value="gbp">GBP</option>
+                                            <option value="myr">MYR</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                    -->
+                                    <div class="col-sm-7">
+                                        Fiat Balance 
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <span class="badge">
+                                            {{req.options.currency}} 
+                                            {{address.balance_fiat_now}}
+                                        </span>
+                                    </div>
+                                </div> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7">
+                        <ul class="list-group">
+                            <li class="list-group-item large">
+                                Transactions
+                                <span class="badge spent">
+                                    {{address.outputs_count_total}} Out
+                                </span>
+                                <span class="badge unspent">
+                                    {{address.inputs_count_total}} In
+                                </span>
+                                <span class="badge">
+                                    {{address.inout_count_total}} Txs
+                                </span>
+                            </li>
+                            <li class="list-group-item large">
+                                Address
+                                <a 
+                                    class="btn btn-default btn-xs pull-right btn-qr" 
+                                    href="#"
+                                    data-content="{{address.address}}"
+                                >
+                                    QR CODE
+                                </a>
+                                <span class="badge">
+                                    {{address.address}}
+                                </span>
+                            </li>
+                            <li class="list-group-item large">
+                                Hash
+                                <span class="badge">
+                                    {{address.address_hash160}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="proxima">Transactions</h4>
+        <div class="filters"></div>
+
+        {{#address.transactions}}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    TX
+                    <a href="../../transaction/{{id}}" class="title">
+                        {{id}}
+                    </a>
+                    <span class="badge pull-right">
+                        {{tx_value_disp}} {{req.chain.code}} | 
+                        {{req.options.currency}} {{tx_value_fiat_now}}
+                    </span>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Time
+                                    <span class="badge">
+                                        {{ago}}
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-7">
+                            <ul class="list-group">
+                                <li class="list-group-item large">
+                                    TXID
+                                    <span class="badge">
+                                        <a href="../../transaction/{{id}}">
+                                            {{id}}
+                                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row ios">
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item header">
+                                    Inputs
+                                </li>
+                                {{#inputs}}
+                                    <li class="list-group-item">
+                                        <a href="../{{address}}">
+                                            {{address}}
+                                        </a>
+                                        <span class="badge spent">
+                                            {{value_disp}} {{req.Chain.code}} | 
+                                            {{req.options.currency}} {{value_fiat_now}}
+                                        </span>
+                                    </li>
+                                {{/inputs}}
+                                {{^inputs}}
+                                    <li class="list-group-item">
+                                        {{#is_coinbase}}
+                                            Mined Coins + Fees
+                                            <span class="badge">
+                                                {{output_value_disp}} 
+                                                {{req.chain.code}} |
+                                                {{req.options.currency}} 
+                                                {{output_value_fiat_now}}
+                                            </span>
+                                        {{/is_coinbase}}
+                                        {{^is_coinbase}}
+                                        {{/is_coinbase}}
+                                    </li>
+                                {{/inputs}}
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item header">
+                                    Outputs
+                                </li>
+                                {{#outputs}}
+                                    <li class="list-group-item">
+                                        <a href="../{{address}}">
+                                            {{address}}
+                                        </a>
+                                        <span class="badge spent">
+                                            {{value_disp}} {{req.Chain.code}} | 
+                                            {{req.Options.currency}} {{value_fiat_now}}
+                                        </span>
+                                    </li>
+                                {{/outputs}}
+                                {{^outputs}}
+                                    <li class="list-group-item">
+                                        No Outputs
+                                    </li>
+                                {{/outputs}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/address.transactions}}
+    
+        <!--
+
+        <h6 class="paging-text">
+            Page 1 of 10
+            <span>(Showing 10 Transactions per Page)</span>
+        </h6>
+
+        <ul class="pagination pagination-lg">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+    
+        -->
+    
+    {{/objs}}
+    {{^objs}}
+        <span class="alert alert-danger" style="text-align: center">THIS ADDRESS CANNOT CURRENTLY BE FOUND</span>
+    {{/objs}}
+</div>

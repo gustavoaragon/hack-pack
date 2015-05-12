@@ -1,0 +1,51 @@
+{
+    "title": "Self-Managed Document Signer & Proof of Existence",
+    "css": [
+        {
+            "href": "css/bootstrap.css"
+        },
+        {
+            "href": "css/uploads.css"
+        }
+    ],
+    "js": [
+        {
+            "src": "js/jquery.min.js"
+        },
+        {
+            "src": "js/bootstrap.min.js"
+        },
+        {
+            "src": "js/blockstrap/crypto.js"
+        },
+        {
+            "src": "js/blockstrap/sha3.js"
+        },
+        {
+            "src": "js/blockstrap/bitcoinjs-lib.js"
+        },
+        {
+            "src": "js/bs.options.js"
+        },
+        {
+            "src": "js/blockstrap.js"
+        },
+        {
+            "src": "js/blockstrap/api.js"
+        },
+        {
+            "src": "js/blockstrap/blockchains.js"
+        },
+        {
+            "src": "js/dropzone.js"
+        },
+        {
+            "src": "js/uploads.js"
+        }
+    ],
+    "intro": "verify ownership of a file by uploading it below",
+    "credits": "Powered by <a href='http://blockstrap.com'>Blockstrap</a> | View <a href='https://github.com/blockstrap/uploads'>Source Code</a>",
+    "analytics": {
+        "google": "UA-55832346-1"
+    }
+}

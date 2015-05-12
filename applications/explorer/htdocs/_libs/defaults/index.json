@@ -1,0 +1,184 @@
+{
+   "page": {
+       "title": "Blockchains.io | The Crypto-Currency Blockchain Explorer",
+       "base": "",
+       "lang": "en",
+       "home": "#",
+       "brand": "blockchains.io",
+       "meta": "Search blocks, addresses, and transactions for the Bitcoin, Darkcoin, Dogecoin & Litecoin blockchains and their test nets"
+    },
+    "tags": [
+        {
+           "property": "og:url",
+           "content": "http://blockchains.io"
+        },
+        {
+           "property": "og:title",
+           "content": "The Crypto-Currency Blockchain Explorer"
+        },
+        {
+           "property": "og:image",
+           "content": "https://blockchains.io/_libs/img/blockchainsmeta.png"
+        },
+        {
+           "property": "og:description",
+           "content": "The Open Source Crypto-Currency Block Explorer powered by Blockstrap"    
+        },
+        {
+           "property": "og:site_name",
+           "content": "Blockchains.io"
+        }
+    ],
+    "copy": {
+        
+    },
+    "css": [
+        {
+            "slug": "_libs/css/bootstrap.css"
+        },
+        {
+            "slug": "_libs/css/web.css"
+        }
+    ],
+    "js": [
+        {
+            "slug": "_libs/js/jquery.min.js"
+        },
+        {
+            "slug": "_libs/js/bootstrap.min.js"
+        },
+        {
+            "slug": "_libs/js/qrcode.js"
+        },
+        {
+            "slug": "_libs/js/web.js"
+        }
+    ],
+    "nav": [
+        {
+            "text": "about",
+            "slug": "about",
+            "css": ""
+        },
+        {
+            "text": "currency",
+            "slug": "currency",
+            "css": "",
+            "sub": {
+                "nav": [
+                    {
+                        "text": "Bitcoin",
+                        "slug": "btc",
+                        "css": ""
+                    },
+                    {
+                        "text": "Darkcoin",
+                        "slug": "drk",
+                        "css": ""
+                    },
+                    {
+                        "text": "Dogecoin",
+                        "slug": "doge",
+                        "css": ""
+                    },
+                    {
+                        "text": "Litecoin",
+                        "slug": "ltc",
+                        "css": ""
+                    },
+                    {
+                        "text": "Bitcoin Testnet",
+                        "slug": "btct",
+                        "css": ""
+                    },
+                    {
+                        "text": "Darkcoin Testnet",
+                        "slug": "drkt",
+                        "css": ""
+                    },
+                    {
+                        "text": "Dogecoin Testnet",
+                        "slug": "dogt",
+                        "css": ""
+                    },
+                    {
+                        "text": "Litecoin Testnet",
+                        "slug": "ltct",
+                        "css": ""
+                    }
+                ]
+            }
+        },
+        {
+            "text": "api",
+            "href": "http://docs.blockstrap.com/api/",
+            "css": ""
+        }
+    ],
+    "header": {
+        "sub": {
+            "h1": "Welcome to blockchains.io - the open source block explorer for multiple crypto-currencies",
+            "h2": "Blockchains.io is an example web app powered by the <a href='http://blockstrap.com/' target='_blank'><u>Blockstrap</u></a> API. You can search blocks, addresses, and transactions for the Bitcoin, Darkcoin, Dogecoin & Litecoin blockchains. <a href='https://github.com/blockstrap/blockchains.io' target='_blank'><u>Click here</u></a> to view on GitHub.",
+            "search": true,
+            "panel": true,
+            "css": {
+                "left": "col-md-8",
+                "right": "col-md-4"
+            }
+        }
+    },
+    "footer": {
+        "nav": [
+            {
+                "text": "home",
+                "slug": "#",
+                "css": "active"
+            },
+            {
+                "text": "about",
+                "slug": "about",
+                "css": ""
+            },
+            {
+                "text": "bitcoin",
+                "slug": "btc",
+                "css": ""
+            },
+            {
+                "text": "darkcoin",
+                "slug": "drk",
+                "css": ""
+            },
+            {
+                "text": "dogecoin",
+                "slug": "doge",
+                "css": ""
+            },
+            {
+                "text": "litecoin",
+                "slug": "ltc",
+                "css": ""
+            },
+            {
+                "text": "btc testnet",
+                "slug": "btct",
+                "css": ""
+            },
+            {
+                "text": "drk testnet",
+                "slug": "drkt",
+                "css": ""
+            },
+            {
+                "text": "doge testnet",
+                "slug": "dogt",
+                "css": ""
+            },
+            {
+                "text": "ltc testnet",
+                "slug": "ltct",
+                "css": ""
+            }
+        ]
+    }
+}

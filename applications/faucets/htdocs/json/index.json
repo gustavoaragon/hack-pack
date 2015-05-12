@@ -1,0 +1,84 @@
+{
+    "title": "Blockstrap Testnet Faucets",
+    "byline": "enter your email below and we will send you a claim code",
+    "css": [
+        {
+            "href": "css/bootstrap.css"
+        },
+        {
+            "href": "css/faucets.css"
+        }
+    ],
+    "js": [
+        {
+            "src": "js/jquery.min.js"
+        },
+        {
+            "src": "js/bootstrap.min.js"
+        },
+        {
+            "src": "js/blockstrap/crypto.js"
+        },
+        {
+            "src": "js/blockstrap/sha3.js"
+        },
+        {
+            "src": "js/blockstrap/bitcoinjs-lib.js"
+        },
+        {
+            "src": "js/bs.options.js"
+        },
+        {
+            "src": "js/blockstrap.js"
+        },
+        {
+            "src": "js/blockstrap/api.js"
+        },
+        {
+            "src": "js/blockstrap/blockchains.js"
+        },
+        {
+            "src": "js/qrcode.js"
+        },
+        {
+            "src": "js/faucets.js"
+        }
+    ],
+    "chains": [
+        {
+            "chain": "btct",
+            "name": "Bitcoin Testnet",
+            "href": "http://bitcoin.org",
+            "address": "N/A",
+            "balance": "(fetching results)"
+        },
+        {
+            "chain": "dasht",
+            "name": "DashPay Testnet",
+            "href": "http://dashpay.io",
+            "address": "N/A",
+            "balance": "(fetching results)"
+        },
+        {
+            "chain": "doget",
+            "name": "Dogecoin Testnet",
+            "href": "http://dogecoin.com",
+            "address": "N/A",
+            "balance": "(fetching results)"
+        },
+        {
+            "chain": "ltct",
+            "name": "Litecoin Testnet",
+            "href": "http://litecoin.org",
+            "address": "N/A",
+            "balance": "(fetching results)"
+        }
+    ],
+    "col": {
+        "css": 3
+    },
+    "credits": "<small><p>Please consider donating to any of the addresses above.</p><p>Powered by <a href='http://blockstrap.com'>Blockstrap</a> | View <a href='https://github.com/blockstrap/faucets'>Source Code</a></p></small>",
+    "analytics": {
+        "google": "UA-55832346-1"
+    }
+}
