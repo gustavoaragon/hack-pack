@@ -44,3 +44,7 @@ We covered the following topics:
 You then need to engage throughout the entire event. 
 
 Check-in with each team every two to three hours.
+
+-----
+
+If you would like some help organizing a blockchain-based hackathon or have a suggestion for ways in which we may be able to further help the community as a whole by improving upon this hack-pack, please [reach out](mailto:hello@blockstrap.com) to us.
