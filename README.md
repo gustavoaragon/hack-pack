@@ -27,7 +27,9 @@ We provided USB thumb-drives containing the following files (included in this re
 
 #### 2) Education
 
-We conducted two 5 hour workshops during the week leading upto the hackathon that covered the following topics:
+We conducted two 5 hour workshops during the week leading upto the hackathon.
+
+We covered the following topics:
 
 * Cryptography 101
 * Blockchains 101
