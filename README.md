@@ -23,7 +23,7 @@ We provided USB thumb-drives containing the following files (included in this re
 
 #### 2) Be Educated
 
-And then?
+We conducted two 5 hour workshop during the week leading upto the hackathon.
 
 #### 3) Be Willing
 
