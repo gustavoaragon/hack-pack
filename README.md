@@ -2,15 +2,15 @@
 
 ### Hackathon Starting Guide
 
-When participating in the organization of the [DSB Blockchain Hackathon](http://blockstrap.com/en/blog/dbs-blockchain-hack-de-brief/) in Singapore, we made several observatons and contributions that others may find useful when organizing blockchain-based hackathons.
+When participating in the organization of the [DSB Blockchain Hackathon](http://blockstrap.com/en/blog/dbs-blockchain-hack-de-brief/) in Singapore, we made several observatons and contributions that others may find useful when organizing blockchain-based hackathons. We will organize these thoughts within one the following categories...
 
 ```
--- Be Prepared
--- Be Educated
--- Be Willing
+-- Preparation
+-- Education
+-- Activation
 ```
 
-#### 1) Be Prepared
+#### 1) Preparation
 
 [![USB Thumbdrives](https://pbs.twimg.com/media/CES3kQ7WEAAAo66.jpg)](https://twitter.com/blockstrap/status/595802885037916160)
 
@@ -21,10 +21,16 @@ We provided USB thumb-drives containing the following files (included in this re
 * SDKs ([Ruby](http://github.com/blockstrap/blockstrap-ruby) & [PHP](http://github.com/blockstrap/blockstrap-php))
 * 5 [Sample Applications](https://github.com/blockstrap/hack-pack/tree/master/applications)
 
-#### 2) Be Educated
+#### 2) Education
 
-We conducted two 5 hour workshop during the week leading upto the hackathon.
+We conducted two 5 hour workshops during the week leading upto the hackathon that covered the following topics:
 
-#### 3) Be Willing
+* Cryptography 101
+* Blockchains 101
+* Transactions 101
+* Blockchains Extended
+* Tracking Real Transactions
 
-And then?
+#### 3) Activation
+
+You then need to engage throughout the entire event. Checking in with each team every two to three hours.
