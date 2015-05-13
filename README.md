@@ -39,4 +39,6 @@ We conducted two 5 hour workshops during the week leading upto the hackathon tha
 
 #### 3) Activation
 
-You then need to engage throughout the entire event. Checking in with each team every two to three hours.
+You then need to engage throughout the entire event. 
+
+Check-in with each team every two to three hours.
