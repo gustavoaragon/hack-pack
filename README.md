@@ -1,6 +1,6 @@
 # The Blockstrap Hack-Pack
 
-### Hackathon Starting Guide
+### Hackathon Get Started Guide
 
 When participating in the organization of the [DBS Bank Blockchain Hack](http://blockstrap.com/en/blog/dbs-blockchain-hack-de-brief/) in Singapore we made several observatons and contributions that others may find useful when organizing their own blockchain-based hackathons. 
 
@@ -30,19 +30,24 @@ We provided USB thumb-drives containing the following files (included in this re
 
 We also included the following five open source [example applications](https://github.com/blockstrap/hack-pack/tree/master/applications):
 
-####[BlockAuth](https://github.com/Neuroware-IO/blockauth)
+####BlockAuth
+[**[Demo]**](http://www.blockauth.me/) | [**[Source]**](https://github.com/Neuroware-IO/blockauth)
 ![BlockAuth Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04230131/blockauth.png)
 
-####[Blockchains.io Block Explorer](https://github.com/blockstrap/blockchains.io)
+####Blockchains.io Block Explorer
+[**[Demo]**](http://www.faucets.blockstrap.com/) | [**[Source]**](https://github.com/blockstrap/blockchains.io)
 ![Explorer Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04155537/blockchainsio.png)
 
-####[Testnet Faucets](https://github.com/blockstrap/faucets)
+####Testnet Faucets
+[**[Demo]**](http://www.blockchains.io/) | [**[Source]**](https://github.com/blockstrap/faucets)
 ![Faucets Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04161244/faucets1.png)
 
-####[Uploads](https://github.com/blockstrap/uploads)
+####Uploads
+[**[Demo]**](http://www.uploads.blockstrap.com/) | [**[Source]**](https://github.com/blockstrap/uploads)
 ![Uploads Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/05115555/docsigner.png)
 
-####[Wallet Theme](https://github.com/blockstrap/hack-pack/tree/master/applications/wallet)
+####[Wallet Theme]
+[**[Demo]**](http://demo.blockstrap.com/framework/v0.5/) | [**[Source]**](https://github.com/blockstrap/hack-pack/tree/master/applications/wallet)
 ![Wallet Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04234910/walletframework.png)
 
 All of the above example applications can be downloaded from the links provided. 
