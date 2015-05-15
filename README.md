@@ -34,7 +34,7 @@ We also included the following five open source [example applications](https://g
 
 ![BlockAuth Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04230131/blockauth.png)
 
-####Blockchains.io Block Explorer [**[Demo]**](http://www.blockchains.cio/) | [**[Source]**](https://github.com/blockstrap/blockchains.io)
+####Blockchains.io Block Explorer [**[Demo]**](http://www.blockchains.io/) | [**[Source]**](https://github.com/blockstrap/blockchains.io)
 ![Explorer Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04155537/blockchainsio.png)
 
 ####Testnet Faucets [**[Demo]**](http://www.faucets.blockstrap.com/) | [**[Source]**](https://github.com/blockstrap/faucets)
