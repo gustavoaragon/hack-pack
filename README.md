@@ -2,7 +2,13 @@
 
 ### Hackathon Starting Guide
 
-When participating in the organization of the [DSB Blockchain Hackathon](http://blockstrap.com/en/blog/dbs-blockchain-hack-de-brief/) in Singapore, we made several observatons and contributions that others may find useful when organizing blockchain-based hackathons. We will organize these thoughts within one the following categories...
+When participating in the organization of the [DSB Blockchain Hackathon](http://blockstrap.com/en/blog/dbs-blockchain-hack-de-brief/) in Singapore we made several observatons and contributions that others may find useful when organizing their own blockchain-based hackathons. 
+
+This repo is an intended starting point for any blockchain developer who is about to embark on their own hack. It features a getting started guide, dcoumentation from Blockstrap.com, and 5 open source example applications that can be ripped and modified.
+
+Please not that this Hack-Pack is a work in progress and will continue to be updated in the near future as Blockstrap powers more hackathons around the globe.
+
+Our three focus points for creating this hack-pack have been the following categories...
 
 ```
 -- Preparation
@@ -27,9 +33,9 @@ We provided USB thumb-drives containing the following files (included in this re
 
 #### 2) Education
 
-We conducted two 5 hour workshops during the week leading upto the hackathon.
+[![DBS Blockchain Hack Meetup](http://img.youtube.com/vi/-96KUDogSgw/0.jpg)](http://www.youtube.com/watch?v=-96KUDogSgw)
 
-We covered the following topics:
+We conducted two 5 hour workshops during the week leading upto the hackathon which covered the following topics:
 
 * Cryptography 101
 * Blockchains 101
@@ -37,14 +43,18 @@ We covered the following topics:
 * Blockchains Extended
 * Tracking Real Transactions
 
+[![DBS Blockchain Hack Google Hangout](http://img.youtube.com/vi/i1sNI4f1vBg/0.jpg)](http://www.youtube.com/watch?v=i1sNI4f1vBg)
+
 -----
 
 #### 3) Activation
 
-You then need to engage throughout the entire event. 
+If you're helping organize the event, you really need to 'work the floor' and engage with developers throughout. As organizers of any hack, the quality of ideas produced is directly linked to the quality of support hackers receive. 
 
-Check-in with each team every two to three hours.
+We reccomend checking-in with each team at least every two to three hours.
+
+Blockstrap also provides low-level anonymous usage of it's API which is ideal for getting started quickly. More details can be found at http://blockstrap.com/en/API
 
 -----
 
-If you would like some help organizing a blockchain-based hackathon or have a suggestion for ways in which we may be able to further help the community as a whole by improving upon this hack-pack, please [reach out](mailto:hello@blockstrap.com) to us and let us know how we can help.
+If you would like help or support from Blockstrap organizing a blockchain-based hackathon, or have suggestions for ways we can further help the community as a whole by improving upon this hack-pack, please [reach out](mailto:hello@blockstrap.com) to us and let us know how we can help.
