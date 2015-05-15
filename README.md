@@ -24,11 +24,28 @@ Our three focus points for creating this hack-pack have been the following categ
 
 We provided USB thumb-drives containing the following files (included in this repository):
 
-* Getting Started ([PDF](https://github.com/blockstrap/hack-pack/raw/master/GETTING_STARTED.pdf))
+* Getting Started Guide ([PDF](https://github.com/blockstrap/hack-pack/raw/master/GETTING_STARTED.pdf))
 * HTML [Documentation](http://docs.blockstrap.com)
 * SDKs ([Ruby](http://github.com/blockstrap/blockstrap-ruby) & [PHP](http://github.com/blockstrap/blockstrap-php))
-* 5 [Sample Applications](https://github.com/blockstrap/hack-pack/tree/master/applications)
 
+We also included the following five open source [example applications](https://github.com/blockstrap/hack-pack/tree/master/applications):
+
+####[BlockAuth](https://github.com/Neuroware-IO/blockauth)
+![BlockAuth Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04230131/blockauth.png)
+
+####[Blockchains.io Block Explorer](https://github.com/blockstrap/blockchains.io)
+![Explorer Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04155537/blockchainsio.png)
+
+####[Testnet Faucets](https://github.com/blockstrap/faucets)
+![Faucets Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04161244/faucets1.png)
+
+####[Uploads](https://github.com/blockstrap/uploads)
+![Uploads Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/05115555/docsigner.png)
+
+####[Wallet Theme](https://github.com/blockstrap/hack-pack/tree/master/applications/wallet)
+![Wallet Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04234910/walletframework.png)
+
+All of the above example applications can be downloaded from the links provided. 
 -----
 
 #### 2) Education
