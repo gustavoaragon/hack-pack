@@ -2,11 +2,11 @@
 
 ### Hackathon Starting Guide
 
-When participating in the organization of the [DSB Blockchain Hackathon](http://blockstrap.com/en/blog/dbs-blockchain-hack-de-brief/) in Singapore we made several observatons and contributions that others may find useful when organizing their own blockchain-based hackathons. 
+When participating in the organization of the [DBS Bank Blockchain Hack](http://blockstrap.com/en/blog/dbs-blockchain-hack-de-brief/) in Singapore we made several observatons and contributions that others may find useful when organizing their own blockchain-based hackathons. 
 
 This repo is an intended starting point for any blockchain developer who is about to embark on their own hack. It features a getting started guide, dcoumentation from Blockstrap.com, and 5 open source example applications that can be ripped and modified.
 
-Please not that this Hack-Pack is a work in progress and will continue to be updated in the near future as Blockstrap powers more hackathons around the globe.
+Please not that this Hack-Pack is a work in progress and will continue to be updated in the future as Blockstrap powers more hackathons around the globe.
 
 Our three focus points for creating this hack-pack have been the following categories...
 
@@ -53,8 +53,8 @@ If you're helping organize the event, you really need to 'work the floor' and en
 
 We reccomend checking-in with each team at least every two to three hours.
 
-Blockstrap also provides low-level anonymous usage of it's API which is ideal for getting started quickly. More details can be found at http://blockstrap.com/en/API
+Blockstrap also provides low-level anonymous usage of it's API which is ideal for getting developers started quickly. More details can be found at http://blockstrap.com/en/API
 
 -----
 
-If you would like help or support from Blockstrap organizing a blockchain-based hackathon, or have suggestions for ways we can further help the community as a whole by improving upon this hack-pack, please [reach out](mailto:hello@blockstrap.com) to us and let us know how we can help.
+If you would like help or support from Blockstrap in organizing a blockchain-based hackathon, or have suggestions for ways we can further help the community as a whole by improving upon this Hack-Pack, please [reach out to us](mailto:hello@blockstrap.com) and let us know how we can help.
