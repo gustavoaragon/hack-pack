@@ -34,16 +34,16 @@ We also included the following five open source [example applications](https://g
 
 ![BlockAuth Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04230131/blockauth.png)
 
-####Blockchains.io Block Explorer [**[Demo]**](http://www.blockchains.io/) | [**[Source]**](https://github.com/blockstrap/blockchains.io)
+####Blockchains.io (Block Explorer): [[Demo](http://www.blockchains.io/)] | [[Source](https://github.com/blockstrap/blockchains.io)]
 ![Explorer Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04155537/blockchainsio.png)
 
-####Testnet Faucets [**[Demo]**](http://www.faucets.blockstrap.com/) | [**[Source]**](https://github.com/blockstrap/faucets)
+####Testnet Faucets (Free Coins via Email): [[Demo](http://www.faucets.blockstrap.com/)] | [[Source](https://github.com/blockstrap/faucets)]
 ![Faucets Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04161244/faucets1.png)
 
-####Uploads [**[Demo]**](http://www.uploads.blockstrap.com/) | [**[Source]**](https://github.com/blockstrap/uploads)
+####Uploads (Proof of Existence File Uploading): [[Demo](http://www.uploads.blockstrap.com/)] | [[Source](https://github.com/blockstrap/uploads)]
 ![Uploads Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/05115555/docsigner.png)
 
-####[Wallet Theme] [**[Demo]**](http://demo.blockstrap.com/framework/v0.5/) | [**[Source]**](https://github.com/blockstrap/hack-pack/tree/master/applications/wallet)
+####Wallet (Web-Based Default Framework Theme): [[Demo](http://demo.blockstrap.com/framework/v0.5/)] | [[Source](https://github.com/blockstrap/framework)]
 ![Wallet Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04234910/walletframework.png)
 
 -----
