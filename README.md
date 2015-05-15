@@ -30,7 +30,7 @@ We provided USB thumb-drives containing the following files (included in this re
 
 We also included the following five open source [example applications](https://github.com/blockstrap/hack-pack/tree/master/applications):
 
-####BlockAuth [**[Demo]**](http://www.blockauth.me/) | [**[Source]**](https://github.com/Neuroware-IO/blockauth)
+####BlockAuth (Registration & Login via Blockchain): [[Demo](http://www.blockauth.me/)] | [[Source](https://github.com/Neuroware-IO/blockauth)]
 
 ![BlockAuth Screen-Shot](http://blockcontent.s3.amazonaws.com/content/uploads/sites/3/2015/05/04230131/blockauth.png)
 
