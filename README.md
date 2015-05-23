@@ -68,7 +68,7 @@ We conducted two 5 hour workshops during the week leading upto the hackathon whi
 
 If you're helping organize the event, you really need to 'work the floor' and engage with developers throughout. As organizers of any hack, the quality of ideas produced is directly linked to the quality of support hackers receive. 
 
-We reccomend checking-in with each team at least every two to three hours.
+We recommend checking-in with each team at least every two to three hours.
 
 Blockstrap also provides low-level anonymous usage of it's API which is ideal for getting developers started quickly. More details can be found at http://blockstrap.com/en/API
 
