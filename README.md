@@ -52,13 +52,16 @@ We also included the following five open source [example applications](https://g
 
 [![DBS Blockchain Hack Meetup](http://img.youtube.com/vi/-96KUDogSgw/0.jpg)](http://www.youtube.com/watch?v=-96KUDogSgw)
 
-We conducted two 5 hour workshops during the week leading upto the hackathon which covered the following topics:
+We conducted two 5 hour workshops during the week leading up to the hackathon which covered the following topics:
 
-* Cryptography 101
-* Blockchains 101
-* Transactions 101
-* Blockchains Extended
-* Tracking Real Transactions
+* [An Introduction to Blockchains](http://www.slideshare.net/Blockstrap/cbgtbt-part-1-workshop-introduction-primer)
+* [Blockchains 101](http://www.slideshare.net/Blockstrap/02-blockchains-101)
+* [Transactions 101](http://www.slideshare.net/Blockstrap/03-transactions-101)
+* [Mining](http://www.slideshare.net/Blockstrap/cbgtbt-part-4-mining)
+* [Blockchains 102](http://www.slideshare.net/Blockstrap/05-blockchains-102)
+* [Transactions 102](http://www.slideshare.net/Blockstrap/06-transactions-102)
+
+These slides were also presented as 'A Complete Beginners Guide to Blockchain Technology' as part of our #StartingBlock2015 tour of Europe - [you can read more about our workshop tour here](http://blockstrap.com/en/blog/onboarding-europe/). 
 
 [![DBS Blockchain Hack Google Hangout](http://img.youtube.com/vi/i1sNI4f1vBg/0.jpg)](http://www.youtube.com/watch?v=i1sNI4f1vBg)
 
