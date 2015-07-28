@@ -61,7 +61,7 @@ We conducted two 5 hour workshops during the week leading up to the hackathon wh
 * [Blockchains 102](http://www.slideshare.net/Blockstrap/05-blockchains-102)
 * [Transactions 102](http://www.slideshare.net/Blockstrap/06-transactions-102)
 
-These slides were also presented as 'A Complete Beginners Guide to Blockchain Technology' as part of our #StartingBlock2015 tour of Europe - [you can read more about our workshop tour here](http://blockstrap.com/en/blog/onboarding-europe/). 
+Note: These slides were also presented as 'A Complete Beginners Guide to Blockchain Technology' as part of our #StartingBlock2015 tour of Europe - [you can read more about our workshop tour here](http://blockstrap.com/en/blog/onboarding-europe/). 
 
 [![DBS Blockchain Hack Google Hangout](http://img.youtube.com/vi/i1sNI4f1vBg/0.jpg)](http://www.youtube.com/watch?v=i1sNI4f1vBg)
 
